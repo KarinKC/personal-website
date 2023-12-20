@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Karin Kay Portfolio</title>
+    <link rel="stylesheet" href="../styles.css">
+    <meta name='viewport'content='width=device-width, initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover'/>
+    <script src="../code.js"></script>
+</head>
+
+<body>
+
+    <header class="nav-container expandable">
+        <div class="nav-buttons expandable">
+            <a href="../index.html">
+                <img src="../resources/logo.svg" alt="KKC logo" class="logo expandable"/>
+            </a>  
+            <div class="hamburger-icon expandable" onclick="onHamburgerIconClick()"></div>   
+        </div>
+        <nav class="nav-list expandable">
+            <ul>
+                <li><a class="another-page" href="../index.html">Home</a></li>
+                <li><a href="../projects.html">Projects</a></li>
+                <li><a class="another-page" href="../about.html">About</a></li>
+                <li><a class="another-page" href="../contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="page">
+
+        <div class="project-preview project-home">
+            <div class="project-preview project-image">
+                <img src="../resources/photo-editor/main1.svg" alt="main Photo-editor screen" class="phone"/>
+                <div class="carousel">
+                    <img src="../resources/circle-empty.svg" alt="Empty circle">
+                    <img src="../resources/circle-full.svg" alt="Full circle">
+                </div>
+            </div>
+            <div class="project-title">
+                <h3>Photo Editor New Onboarding & Paywall</h3>
+                <div class="project-subtitle">
+                    <p>Edit images with unique filters and effects, or generate AI videos</p>
+                    <p class="caption">
+                        <span>Published in <a class="caption-link" href="https://apps.apple.com/us/app/photo-editor-effects-filters/id1460484280">app stores</a></span>
+                        <span>·</span>
+                        <span>September 2023</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-project">
+            <h3>Context</h3>
+            <p>The app offers users a collection of over 300 exclusive filters and effects. Recently, a new feature was introduced - an AI-generated video that transforms a still image into a short video.</p>
+            <p>Users can easily enhance their photos with image adjustments, filters, special effects, overlay textures, stickers, frames, and a text editor. During the editing process, users can compare the 'before' and 'after' of the edited photo with the original.</p>
+        </div>
+
+        <hr>
+
+        <div class="section-project">
+            <h3>Goal</h3>
+            <p>With the aim of <strong>improving user engagement</strong> and <strong>conversion rate</strong>, the project centred around two main sections of the app:</p>
+            <ol>
+                <li><strong>Onboarding flow</strong>: This involved modifying the copy and images in the onboarding flow, along with making slight adjustments to the UI.</li>
+                <li><strong>Paywall</strong>: Transforming the current image based paywall into a video based one.</li>
+            </ol>
+        </div>
+
+        <hr>
+
+        <div class="section-project">
+            <h3>Existing Product</h3>
+            <p><strong>Onboarding Flow</strong></p>
+            <div class="pictures-container">
+                <img class="picture-display" src="../resources/photo-editor/existing-onboarding-1.jpg" alt="existing onboarding 1">
+                <img class="picture-display" src="../resources/photo-editor/existing-onboarding-2.jpg" alt="existing onboarding 2">
+                <img class="picture-display" src="../resources/photo-editor/existing-onboarding-3.jpg" alt="existing onboarding 3">
+                <img class="picture-display" src="../resources/photo-editor/existing-onboarding-4.jpg" alt="existing onboarding 4">
+                <img class="picture-display" src="../resources/photo-editor/existing-onboarding-5.jpg" alt="existing onboarding 5">
+                <img class="picture-display" src="../resources/photo-editor/existing-onboarding-6.jpg" alt="existing onboarding 6">
+                <img class="picture-display" src="../resources/photo-editor/existing-onboarding-7.jpg" alt="existing onboarding 7">
+                <img class="picture-display" src="../resources/photo-editor/existing-onboarding-8.jpg" alt="existing onboarding 8">
+            </div>
+            <p><strong>Paywall</strong></p>
+            <div class="pictures-container">
+                <img class="picture-display" src="../resources/photo-editor/existing-paywall-1.jpg" alt="existing paywall 1">
+                <img class="picture-display" src="../resources/photo-editor/existing-paywall-2.jpg" alt="existing paywall 2">
+                <img class="picture-display" src="../resources/photo-editor/existing-paywall-3.jpg" alt="existing paywall 3">
+                <img class="picture-display" src="../resources/photo-editor/existing-paywall-4.jpg" alt="existing paywall 4">
+            </div>
+        </div>
+
+        <div class="section-project">
+            <h3>Research</h3>
+            <ul>
+                <li><strong>Keywords</strong>: The keywords driving most organic traffic are photo editor effects, picture effects, and photo effects.</li>
+                <li><strong>Usage data</strong>: Overlays and Filters are the categories driving the highest conversion rate, as well as edits such as 'pink clouds', 'underwater 1', and 'dot screen'.</li>
+                <li><strong>Competitive analysis</strong>: Before initiating design iterations, a comprehensive understanding of the market was crucial. I conducted an analysis of the onboarding flows and paywalls of successful competitors, including:</li>
+            </ul>
+            <div class="competitors-container">
+                <div class="competitor">
+                    <img class="competitors-logo" src="../resources/photo-editor/competitors/vixer.svg" alt="Vixer logo">
+                    Vixer
+                </div>
+                <div class="competitor">
+                    <img class="competitors-logo" src="../resources/photo-editor/competitors/temply.svg" alt="Temply logo">
+                    Temply
+                </div>
+                <div class="competitor">
+                    <img class="competitors-logo" src="../resources/photo-editor/competitors/ps-express.svg" alt="PS Express logo">
+                    PS Express
+                </div>
+                <div class="competitor">
+                    <img class="competitors-logo" src="../resources/photo-editor/competitors/focos.svg" alt="Focos logo">
+                    Focos
+                </div>
+                <div class="competitor">
+                    <img class="competitors-logo" src="../resources/photo-editor/competitors/remini.svg" alt="Remini logo">
+                    Remini
+                </div>
+                <div class="competitor">
+                    <img class="competitors-logo" src="../resources/photo-editor/competitors/pixelup.svg" alt="Pixelup logo">
+                    Pixelup
+                </div>
+                <div class="competitor">
+                    <img class="competitors-logo" src="../resources/photo-editor/competitors/prequel.svg" alt="Prequel logo">
+                    Prequel
+                </div>
+                <div class="competitor">
+                    <img class="competitors-logo" src="../resources/photo-editor/competitors/tezza.svg" alt="Tezza logo">
+                    Tezza
+                </div>
+                <div class="competitor">
+                    <img class="competitors-logo" src="../resources/photo-editor/competitors/filto.svg" alt="Filto logo">
+                    Filto
+                </div>
+                <div class="competitor">
+                    <img class="competitors-logo" src="../resources/photo-editor/competitors/lightleap.svg" alt="Lightleap logo">
+                    Lightleap
+                </div>
+                <div class="competitor">
+                    <img class="competitors-logo" src="../resources/photo-editor/competitors/lensa.svg" alt="Lensa logo">
+                    Lensa
+                </div>
+            </div>
+            <div>
+                Common patterns identified include:
+                <ol>
+                    <li>
+                        <p><strong>Engaging Onboarding Flows</strong></p>
+                        <p>Users are engaged by applying effects interactively (via buttons or sliders) or by watching a video demonstrating the effects.</p>
+                    </li>
+                    <li>
+                        <p><strong>"Apply and Next" Logic</strong></p>
+                        <p>The flow of "apply and next" logic is similar to apps like Focos, Remini, or Pixelup.</p>
+                    </li>
+                    <li>
+                        <p><strong>Demographics</strong></p>
+                        <p>A majority of users in these apps are women.</p>
+                    </li>
+                    <li>
+                        <p><strong>Paywall/Sign-up Screen</strong></p>
+                        <p>All onboarding flows conclude with a paywall or sign-up screen.</p>
+                    </li>
+                    <li>
+                        <p><strong>Continuation Buttons</strong></p>
+                        <p>Most onboarding flows continue with a button rather than a carousel.</p>
+                    </li>
+                    <li>
+                        <p><strong>Centralised Buttons</strong></p>
+                        <p>Buttons are typically centralized in the interface.</p>
+                    </li>
+                    <li>
+                        <p><strong>Consistent Design</strong></p>
+                        <p>Buttons for continuing onboarding are often similar to buttons for continuing with payment.</p>
+                    </li>
+                    <li>
+                        <p><strong>Font Style</strong></p>
+                        <p>Sans serif fonts are commonly used.</p>
+                    </li>
+                    <li>
+                        <p><strong>Video-Based Paywalls</strong></p>
+                        <p>Vixer and Temply serve as good examples of simple video-based paywalls.</p>
+                    </li>
+                </ol>
+            </div>
+            <p>This analysis serves as a foundation for informed design decisions.</p>
+        </div>
+
+        <div class="section-project">
+            <h3>Solutions</h3>
+            <p><strong>Onboarding Flow</strong></p>
+            <div class="solutions-numbers-container">
+                <span class="solutions-numbers-text">1</span>
+                <div class="solutions-container">
+                    <p><strong>Buttons</strong></p>
+                    <ol>
+                        <li>Always maintain at the <strong>same position</strong> to create a seamless flow towards the paywall.</li>
+                        <li><strong>'Apply effect' and 'continue' buttons</strong> should have <strong>different appearances</strong> for providing more engagement when applying an effect (which would feel like it “enables” the 'continue' button).</li>
+                        <li>No need for both 'Next' and arrow.</li>
+                    </ol>
+                    <div class="before-after-container">
+                        <div class="before-after">
+                            <p><strong>Before</strong></p>
+                            <img class="image-preview" src="../resources/photo-editor/before-button-apply.svg" alt="Before button Apply">
+                            <img  class="image-preview"src="../resources/photo-editor/before-button-next.svg" alt="Before button Next">
+                        </div>
+                        <div class="before-after">
+                            <p><strong>After</strong></p>
+                            <img class="image-preview" src="../resources/photo-editor/after-button-apply.svg" alt="After button Apply">
+                            <img class="image-preview" src="../resources/photo-editor/after-button-continue.svg" alt="After button Continue">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="solutions-numbers-container">
+                <span class="solutions-numbers-text">2</span>
+                <div class="solutions-container">
+                    <p><strong>Images</strong></p>
+                    <ol>
+                        <li>2/3 images of <strong>women</strong> of different colours (taking into consideration the target user).</li>
+                        <li>1/3 images of <strong>men</strong>.</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="solutions-numbers-container">
+                <span class="solutions-numbers-text">3</span>
+                <div class="solutions-container">
+                    <p><strong>Copy</strong></p>
+                    <ol>
+                        <li><strong>Relate</strong> better to the specific images and effects applied.</li>
+                        <li><strong>Titles changing</strong> together with subtitles in every screen.</li>
+                        <li>Add a <strong>date</strong> to the reviews.</li>
+                    </ol>
+                </div>
+            </div>
+            <div>
+                <p><strong>Paywall</strong></p>
+                <div class="solutions-numbers-container">
+                    <span class="solutions-numbers-text">1</span>
+                    <div class="solutions-container solutions-paywall">
+                        <p><strong>Copy</strong></p>
+                        <ol>
+                            <li><strong>Less text</strong> and a <strong>more simple</strong> message.</li>
+                            <li>Taking the approach of a '<strong>payramp</strong>' rather than a 'paywall' ('Ready to go Pro?' / 'More magic awaits' / 'Redeem your free trial').</li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="solutions-numbers-container">
+                    <span class="solutions-numbers-text">2</span>
+                    <div class="solutions-container solutions-paywall">
+                        <p><strong>Colours</strong></p>
+                        <p>SAVE 90%': using the <strong>complimentary</strong> colour for emphasising this concept and popping it out.</p>
+                    </div>
+                </div>
+                <div class="solutions-numbers-container">
+                    <span class="solutions-numbers-text">3</span>
+                    <div class="solutions-container solutions-paywall">
+                        <p><strong>Videos</strong></p>
+                        <p>Video in the background as a sequence of shorter videos of '<strong>natural moments</strong>' - creating a calm and relaxing feeling</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="section-project">
+            <h3>Paywall Iteration</h3>
+            <p>Initially, I wanted to make the design of the paywall more consistent with that of the onboarding, in terms of colours, background, and the distribution of the elements. However, after a discussion with the team, we decided to make a more “radical” trial and to simplify the paywall even further.</p>
+            <div class="section-iteration">
+                <div class="iteration">
+                    <img src="../resources/photo-editor/iteration-paywall-1.svg" alt="Existing paywall">
+                    <svg class="arrow-iteration" width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.175 9.5968H0V7.5968H12.175L6.575 1.9968L8 0.596802L16 8.5968L8 16.5968L6.575 15.1968L12.175 9.5968Z"/>
+                        <path d="M12.175 9.5968H0V7.5968H12.175L6.575 1.9968L8 0.596802L16 8.5968L8 16.5968L6.575 15.1968L12.175 9.5968Z"/>
+                        <path d="M12.175 9.5968H0V7.5968H12.175L6.575 1.9968L8 0.596802L16 8.5968L8 16.5968L6.575 15.1968L12.175 9.5968Z"/>
+                    </svg>
+                    <img src="../resources/photo-editor/iteration-paywall-2.svg" alt="Iteration paywall">
+                    <svg class="arrow-iteration" width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.175 9.5968H0V7.5968H12.175L6.575 1.9968L8 0.596802L16 8.5968L8 16.5968L6.575 15.1968L12.175 9.5968Z"/>
+                        <path d="M12.175 9.5968H0V7.5968H12.175L6.575 1.9968L8 0.596802L16 8.5968L8 16.5968L6.575 15.1968L12.175 9.5968Z"/>
+                        <path d="M12.175 9.5968H0V7.5968H12.175L6.575 1.9968L8 0.596802L16 8.5968L8 16.5968L6.575 15.1968L12.175 9.5968Z"/>
+                    </svg>
+                    <img src="../resources/photo-editor/iteration-paywall-3.svg" alt="Iteration paywall final">
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="section-project">
+            <h3>Final Design</h3>
+            <p><strong>Onboarding Flow</strong></p>
+            <div class="section-iteration">
+                <img src="../resources/photo-editor/final-design/prototype.svg" alt="Onboarding Prototype">
+                <div class="interaction">
+                    <img src="../resources/arrow-interact.svg" alt="Arrow for interaction">
+                    <p>Tap to interact</p>
+                </div>
+            </div>
+            <p><strong>Paywall</strong></p>
+            <div class="section-iteration">
+                <img src="../resources/photo-editor/final-design/paywall-1.svg" alt="Paywall 1">
+                <img src="../resources/photo-editor/final-design/paywall-2.svg" alt="Paywall 2">
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="section-project">
+            <h3>User Testing</h3>
+            <p>The new onboarding flow and paywall have been tested post-production on a segment of users (50%) over a period of 2 months. The results allow the comparison between the original designs and the new ones.</p>
+            <p><strong>Onboarding Flow</strong></p>
+            <p>When it comes to conversions from install to subscription started (or trial converted) the new design underperformed in the US (3.58% vs. 6.99%) yet over-performed outside of the US (0.497% vs. 0.358%).</p>
+            <div class="graph-container-onboarding">
+                <div class="market-container">
+                    <div class="graph-container">
+                        <div class="graph">
+                            <div class="graph-color graph-new-us">
+                                <span>3.58</span>
+                            </div>
+                            <span>
+                                New Design
+                            </span>
+                        </div>
+                        <div class="graph">
+                            <div class="graph-color graph-existing-us">
+                                <span>6.99</span>
+                            </div>
+                            <span>
+                                Existing Design
+                            </span>
+                        </div>
+                    </div>
+                    <p>US Market</p>
+                </div>
+                <div class="market-container">
+                    <div class="graph-container">
+                        <div class="graph">
+                            <div class="graph-color graph-new-non-us">
+                                <span>0.497</span>
+                            </div>
+                            <span>
+                                New Design
+                            </span>
+                        </div>
+                        <div class="graph">
+                            <div class="graph-color graph-existing-non-us">
+                                <span>0.358</span>
+                            </div>
+                            <span>
+                                Existing Design
+                            </span>
+                        </div>
+                    </div>
+                    <p>Non-US Market</p>
+                </div>
+            </div>
+            <p><strong>Paywall</strong></p>
+            <p>The experiment once again underperformed in the US (4.01% vs. 6.88%) yet over-performed outside of the US (0.608% vs. 0.251%).</p>
+            <div class="graph-container-onboarding">
+                <div class="market-container">
+                    <div class="graph-container">
+                        <div class="graph">
+                            <div class="graph-color graph-new-us-paywall">
+                                <span>4.01</span>
+                            </div>
+                            <span>
+                                New Design
+                            </span>
+                        </div>
+                        <div class="graph">
+                            <div class="graph-color graph-existing-us-paywall">
+                                <span>6.88</span>
+                            </div>
+                            <span>
+                                Existing Design
+                            </span>
+                        </div>
+                    </div>
+                    <p>US Market</p>
+                </div>
+                <div class="market-container">
+                    <div class="graph-container">
+                        <div class="graph">
+                            <div class="graph-color graph-new-non-us-paywall">
+                                <span>0.608</span>
+                            </div>
+                            <span>
+                                New Design
+                            </span>
+                        </div>
+                        <div class="graph">
+                            <div class="graph-color graph-existing-non-us-paywall">
+                                <span>0.251</span>
+                            </div>
+                            <span>
+                                Existing Design
+                            </span>
+                        </div>
+                    </div>
+                    <p>Non-US Market</p>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="section-project">
+            <h3>Reflections</h3>
+            <p>The tests lack statistical significance and would need to be further experimented with, over a longer period of time. If the results remain the same, a solution could be to provide localised designs changing according to the location of the user.</p>
+            <div>
+                <p><strong>Onboarding Flow</strong></p>
+                <ul>
+                    <li>Experiment with the other two types of user engagements (i.e slider to apply effects / video of applying effects)</li>
+                </ul>
+            </div>
+            <div>
+                <p><strong>Paywall</strong></p>
+                <ul>
+                    <li>It might be worth exploring other copy options when explaining the features, like selling the 'why' rather than the 'what'.</li>
+                    <li>Experiment with the placement of the paywall: Before / After onboarding; Before / After using a core feature; Each time the app opens</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="bring-to-top-page">
+            <hr>
+            <a class="arrow-up" href="#"><img src="../resources/arrow-up.svg" alt="arrow-up"></a>
+        </div>
+
+        <div class="previous-next-project">
+            <a class="button-more" href="../projects/growit.html">
+                <img src="../resources/arrow-forward.svg" alt="arrow forward" class="arrow-forward arrow-previous"/>
+                <span>Previous project</span>
+            </a>
+            <a class="button-more" href="../projects/odeon-redesign.html">
+                <span>Next project</span>
+                <img src="../resources/arrow-forward.svg" alt="arrow forward" class="arrow-forward"/>
+            </a>
+        </div>
+        
+        <a class="button" href="contact.html">Get in touch</a>
+
+    </main>
+
+    <hr>
+
+        <footer>
+            <ul class="social-icons">
+                <li><a href="mailto:karin.kay9@gmail.com?subject=Hey%20there!"><img src="../resources/contacts/email.svg" alt="envelope symbol"/></a></li>
+                <li><a href="https://www.linkedin.com/in/karin-kay-336382173/" target="_blank"><img src="../resources/contacts/linkedin.svg" alt="linkedin symbol"/></a></li>
+                <li><a href="https://www.instagram.com/karinkay1/" target="_blank"><img src="../resources/contacts/instagram.svg" alt="instagram symbol"/></a></li>
+                <li><a href="https://www.facebook.com/karin.kay" target="_blank"><img src="../resources/contacts/facebook.svg" alt="facebook symbol"/></a></li>
+            </ul>
+            <p class="footer-text">&copy; <time datetime="2023">2023</time> Designed and developed by Karin Kay Cappello.</p>
+        </footer>
+    
+</body>
+</html>

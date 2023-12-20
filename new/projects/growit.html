@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles.css">
+    <meta name='viewport'content='width=device-width, initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover'/>
+    <script src="../code.js"></script>
+</head>
+
+<body>
+
+    <header class="nav-container expandable">
+        <div class="nav-buttons expandable">
+            <a href="../index.html">
+                <img src="../resources/logo.svg" alt="KKC logo" class="logo expandable"/>
+            </a>  
+            <div class="hamburger-icon expandable" onclick="onHamburgerIconClick()"></div>   
+        </div>
+        <nav class="nav-list expandable">
+            <ul>
+                <li><a class="another-page" href="../index.html">Home</a></li>
+                <li><a href="../projects.html">Projects</a></li>
+                <li><a class="another-page" href="../about.html">About</a></li>
+                <li><a class="another-page" href="../contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="page">
+
+        <div class="project-preview project-home">
+            <img src="../resources/growit/main1.svg" alt="Main GrowIt screen" class="phone"/>
+            <div class="carousel">
+                <img src="../resources/circle-empty.svg" alt="Empty circle">
+                <img src="../resources/circle-full.svg" alt="Full circle">
+            </div>
+        </div>
+        <div class="project-title">
+            <h3>GrowIt</h3>
+            <div class="project-subtitle">
+                <p>Seamlessly care for your houseplants</p>
+                <p class="caption">
+                    <span>Personal Project</span>
+                    <span>·</span>
+                    <span>August 2023</span>
+                </p>
+            </div>
+        </div>
+
+            
+        <div class="section-project">
+            <h3>Context</h3>
+            <p>We tend to spend more and more time indoors with each passing year. Covid-19 has accelerated this trend, as the concept of remote work has become increasingly available and accepted.</p>
+            <p>While there are numerous benefits to working from home, it also presents new challenges, many of which are related to our <strong>mental health</strong>. One effective way to address this issue is by <strong>incorporating plants into our indoor environments</strong>.</p>
+            <p>Indoor plants are pretty popular: 7 in 10 millennials call themselves a plant parent. Yet <strong>the average plant parent has killed seven houseplants</strong>. Others often worry they will not be able to keep them alive, preventing them from purchasing one.</p>
+            <ul>
+                <li>48% of individuals aged 25-39 are concerned about plant care.</li>
+                <li>Despite the increasing popularity of houseplants, many people still refrain from owning one due to uncertainty about proper care.</li>
+            </ul>
+            <p><strong>Main benefits of houseplants</strong></p>
+            <div class="context-container">
+                <p class="highlight">reduce stress levels</p>
+                <p class="highlight">boost productivity</p>
+                <p class="highlight">improve the quality of indoor air</p>
+            </div>
+            <div class="caption">
+                *Based on the following studies:
+                <a class="caption-link" href="https://meridian.allenpress.com/jeh/article/14/2/97/79431/Interior-Plants-May-Improve-Worker-Productivity">1</a>,
+                <a class="caption-link" href="https://journals.ashs.org/hortsci/view/journals/hortsci/42/3/article-p581.xml">2</a>,
+                <a class="caption-link" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3230460/">3</a>,
+                <a class="caption-link" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8454400/">4</a>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="section-project">
+            <h3>Goal</h3>
+            <p>Facilitate the care of  houseplants to encourage their inclusion in homes.</p>
+        </div>
+
+        <hr>
+
+        <div class="section-project">
+            <h3>Problems</h3>
+            <ul>
+                <li>Forgetting to take care of plants due to a lack of proper organisation.</li>
+                <li>Lack of easily accessible knowledge for the correct care of plants, including routine care and diseases.</li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="section-project">
+            <h3>User Needs</h3>
+            <ul>
+                <li>As a user, I want to identify a plant's name, classifications, characteristics, and care tips by taking a photo.</li>
+                <li>As a user, I want to organise my plants according to the room they're in.</li>
+                <li>As a user, I want to track each plant's growth by recording details such as age, height, pot size, and sun exposure.</li>
+                <li>As a user, I want to be told when the time comes to water, fertilise or prune my plants.</li>
+                <li>As a user, I want to learn about a plant by searching for its name.</li>
+                <li>As a user, I want to report a plant's problem to receive a diagnosis and solution from expert gardeners.</li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="section-project">
+            <h3>Solutions</h3>
+            <div class="solutions-numbers-container">
+                <span class="solutions-numbers-text">1</span>
+                <div class="solutions-container solutions-growit">
+                    <p>Search by name or scan a plant to identify it and easily access info, care tips, and recognise diseases.</p>
+                </div>
+            </div>
+            <div class="solutions-numbers-container">
+                <span class="solutions-numbers-text">2</span>
+                <div class="solutions-container solutions-growit">
+                    <p>Organised 'My Garden' section to easily view all plants.</p>
+                </div>
+            </div>
+            <div class="solutions-numbers-container">
+                <span class="solutions-numbers-text">3</span>
+                <div class="solutions-container solutions-growit">
+                    <p>Plant care reminders.</p>
+                </div>
+            </div>
+            <div class="solutions-numbers-container">
+                <span class="solutions-numbers-text">4</span>
+                <div class="solutions-container solutions-growit">
+                    <p>Garden expert chat.</p>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="section-project">
+            <h3>User Flow</h3>
+            <img class="image" src="../resources/growit/user-flow.svg" alt="Wireframes">
+        </div>
+
+        <hr>
+
+        <div class="section-project">
+            <h3>Wireframes &amp; Wireflows</h3>
+            <img class="image" src="../resources/growit/wireframes.svg" alt="Wireframes">
+        </div>
+
+        <hr>
+
+        <div class="section-project">
+            <h3>Style-guide</h3>
+            <img class="image-preview image-style-guide" src="../resources/growit/style-guide.jpg" alt="Growit style-guide">
+        </div>
+
+        <hr>
+
+        <div class="section-project">
+            <h3>User Testing</h3>
+            <p>An observation of the natural interaction of users with the app, followed by an interview, allowed me to identify several points of improvement. The following are the major pain points and the changes I implemented accordingly:</p>
+            <ul>
+                <li>In MyGarden it is not clear where I can add a plant / a space → Moved the + icon to the top of the screen.
+                    <div class="iteration iteration-growit">
+                        <img src="../resources/growit/mygarden-before.svg" alt="MyGarden Before">
+                        <svg class="arrow-iteration-growit" width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.175 9.5968H0V7.5968H12.175L6.575 1.9968L8 0.596802L16 8.5968L8 16.5968L6.575 15.1968L12.175 9.5968Z"/>
+                            <path d="M12.175 9.5968H0V7.5968H12.175L6.575 1.9968L8 0.596802L16 8.5968L8 16.5968L6.575 15.1968L12.175 9.5968Z"/>
+                            <path d="M12.175 9.5968H0V7.5968H12.175L6.575 1.9968L8 0.596802L16 8.5968L8 16.5968L6.575 15.1968L12.175 9.5968Z"/>
+                        </svg>
+                        <img src="../resources/growit/mygarden-after.svg" alt="MyGarden After">
+                    </div>
+                </li>
+                <li>Scan for diagnosis is annoying if you have to navigate back for starting over → Changed it to a modal that the user can easily navigate or close.
+                    <div class="iteration iteration-growit">
+                        <img class="image-preview" src="../resources/growit/scan-before.svg" alt="Scan Before">
+                        <svg class="arrow-iteration-growit" width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.175 9.5968H0V7.5968H12.175L6.575 1.9968L8 0.596802L16 8.5968L8 16.5968L6.575 15.1968L12.175 9.5968Z"/>
+                            <path d="M12.175 9.5968H0V7.5968H12.175L6.575 1.9968L8 0.596802L16 8.5968L8 16.5968L6.575 15.1968L12.175 9.5968Z"/>
+                            <path d="M12.175 9.5968H0V7.5968H12.175L6.575 1.9968L8 0.596802L16 8.5968L8 16.5968L6.575 15.1968L12.175 9.5968Z"/>
+                        </svg>
+                        <img class="image-preview" src="../resources/growit/scan-after.svg" alt="Scan After">
+                    </div>
+                </li>
+                <li>Care reminders don't have a clear enough separation between the activities (such as water and fertilise) → Created a more clear UI.
+                    <div class="iteration iteration-growit">
+                        <img class="image-preview" src="../resources/growit/care-before.svg" alt="Care reminders Before">
+                        <svg class="arrow-iteration-growit" width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.175 9.5968H0V7.5968H12.175L6.575 1.9968L8 0.596802L16 8.5968L8 16.5968L6.575 15.1968L12.175 9.5968Z"/>
+                            <path d="M12.175 9.5968H0V7.5968H12.175L6.575 1.9968L8 0.596802L16 8.5968L8 16.5968L6.575 15.1968L12.175 9.5968Z"/>
+                            <path d="M12.175 9.5968H0V7.5968H12.175L6.575 1.9968L8 0.596802L16 8.5968L8 16.5968L6.575 15.1968L12.175 9.5968Z"/>
+                        </svg>
+                        <img class="image-preview" src="../resources/growit/care-after.svg" alt="Care reminders After">
+                    </div>
+               </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="section-project final-design-container">
+            <h3>Final Design</h3>
+            <div class="final-design-phone">
+                <img src="../resources/growit/final-design/home.svg" alt="Final desing home">
+                <p>Home tab includes an easy access to Search, Care Reminders, and discovery articles.</p>
+            </div>
+            <div class="final-design-phone">
+                <img src="../resources/growit/final-design/mygarden.svg" alt="Final desing MyGarden">
+                <p>MyGarden enables you to organise your plants in personalised spaces and easily keep track of their care and growth.</p>
+            </div>
+            <div class="final-design-phone">
+                <img src="../resources/growit/final-design/scan.svg" alt="Final desing scan">
+                <p>Scan features allows you to quickly identify a plant and learn more about it.</p>
+            </div>
+            <div class="final-design-phone">
+                <img src="../resources/growit/final-design/growexpert.svg" alt="Final desing Grow Expert">
+                <p>A chat with a Grow Expert will help you figure out what's wrong with your plant and set up a treatment plan.</p>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="section-project">
+            <h3>Reflections</h3>
+            <ul>
+                <li>A more thorough user analysis can enable a greater understanding on the emphasis to be put on every feature of the app.</li>
+                <li>Possible future steps:
+                    <ul>
+                        <li>Conduct extensive user testing of the app in parallel with research on the real-life benefits it provides, and adjust the app accordingly.</li>
+                        <li>Introduce another section of the app to facilitate purchasing plants, encouraging new users to become plant parents.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="bring-to-top-page">
+            <hr>
+            <a class="arrow-up" href="#"><img src="../resources/arrow-up.svg" alt="arrow-up"></a>
+        </div>
+
+        <div class="previous-next-project">
+            <a class="button-more" href="../projects/odeon-redesign.html">
+                <img src="../resources/arrow-forward.svg" alt="arrow forward" class="arrow-forward arrow-previous"/>
+                <span>Previous project</span>
+            </a>
+            <a class="button-more" href="../projects/photo-editor.html">
+                <span>Next project</span>
+                <img src="../resources/arrow-forward.svg" alt="arrow forward" class="arrow-forward"/>
+            </a>
+        </div>
+        
+        <a class="button" href="contact.html">Get in touch</a>
+
+    </main>
+
+    <hr>
+
+        <footer>
+            <ul class="social-icons">
+                <li><a href="mailto:karin.kay9@gmail.com?subject=Hey%20there!"><img src="../resources/contacts/email.svg" alt="envelope symbol"/></a></li>
+                <li><a href="https://www.linkedin.com/in/karin-kay-336382173/" target="_blank"><img src="../resources/contacts/linkedin.svg" alt="linkedin symbol"/></a></li>
+                <li><a href="https://www.instagram.com/karinkay1/" target="_blank"><img src="../resources/contacts/instagram.svg" alt="instagram symbol"/></a></li>
+                <li><a href="https://www.facebook.com/karin.kay" target="_blank"><img src="../resources/contacts/facebook.svg" alt="facebook symbol"/></a></li>
+            </ul>
+            <p class="footer-text">&copy; <time datetime="2023">2023</time> Designed and developed by Karin Kay Cappello.</p>
+        </footer>
+    
+</body>
+</html>

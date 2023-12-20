@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles.css">
+    <meta name='viewport'content='width=device-width, initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover'/>
+    <script src="../code.js"></script>
+</head>
+
+<body>
+
+    <header class="nav-container expandable">
+        <div class="nav-buttons expandable">
+            <a href="../index.html">
+                <img src="../resources/logo.svg" alt="KKC logo" class="logo expandable"/>
+            </a>  
+            <div class="hamburger-icon expandable" onclick="onHamburgerIconClick()"></div>   
+        </div>
+        <nav class="nav-list expandable">
+            <ul>
+                <li><a class="another-page" href="../index.html">Home</a></li>
+                <li><a href="../projects.html">Projects</a></li>
+                <li><a class="another-page" href="../about.html">About</a></li>
+                <li><a class="another-page" href="../contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="page">
+
+        <div class="project-preview project-home">
+            <div class="project-preview project-image">
+                <img src="../resources/odeon/main1.svg" alt="Main Odeon Redesign screen" class="phone"/>
+                <div class="carousel">
+                    <img src="../resources/circle-empty.svg" alt="Empty circle">
+                    <img src="../resources/circle-full.svg" alt="Full circle">
+                </div>
+            </div>
+            <div class="project-title">
+                <h3>Odeon Redesign</h3>
+                <div class="project-subtitle">
+                    <p>Redesigning the cinema experience</p>
+                    <p class="caption">
+                        <span>Personal Project</span>
+                        <span>·</span>
+                        <span>December 2023</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-project">
+            <h3>Context</h3>
+            <p>It all started when I booked a movie to watch at my nearest cinema, Odeon. When the day arrived, I opened the app to find the ticket I had booked and make sure I had the correct time. However, I couldn't locate it; I had to guess where it might be. Eventually, I found it <strong>hidden within the settings</strong>. Starting from the Home page, reaching my ticket required passing through 3 layers. This was surprising, as I would expect accessing cinema tickets to be one of the main reasons someone would use a cinema app. This observation led me to notice other <strong>experiences that weren't intuitive</strong> in using the Odeon app and eventually inspired me to redesign it.</p>
+            <p>Take a look at what others have thought about the app in <strong>app store reviews</strong>:</p>
+            <div class="reviews-container">
+                <div class="reviews-stars">
+                    <img src="../resources/star-full.svg" alt="Full star">
+                    <img src="../resources/star-full.svg" alt="Full star">
+                    <img src="../resources/star-empty.svg" alt="Empty star">
+                    <img src="../resources/star-empty.svg" alt="Empty star">
+                    <img src="../resources/star-empty.svg" alt="Empty star">
+                </div>
+                <p>Jonathan_Christopher, 17/10/2021</p>
+                <p><strong>Can't book using this</strong></p>
+                <p>“The app works well enough to browse what's on at cinemas, using E-tickets and collecting food orders is nice but that's about all this has going for it.”</p>
+            </div>
+            <div class="reviews-container">
+                <div class="reviews-stars">
+                    <img src="../resources/star-full.svg" alt="Full star">
+                    <img src="../resources/star-full.svg" alt="Full star">
+                    <img src="../resources/star-full.svg" alt="Full star">
+                    <img src="../resources/star-full.svg" alt="Full star">
+                    <img src="../resources/star-full.svg" alt="Full star">
+                </div>
+                <p>Tamworth Cinemagoer, 25/05/2021</p>
+                <p><strong>Not intuitive</strong></p>
+                <p>“This is a serious backwards step compared to the old app. Very difficult to navigate. Takes ages to find the membership card which is buried deep within the app. Why can't the membership card be saved to Apple wallet? Too many error messages and crashes during use. Despite having my local cinema saved in preferences it doesn't carry this through to booking a movie.”</p>
+            </div>
+            <div class="reviews-container">
+                <div class="reviews-stars">
+                    <img src="../resources/star-full.svg" alt="Full star">
+                    <img src="../resources/star-empty.svg" alt="Empty star">
+                    <img src="../resources/star-empty.svg" alt="Empty star">
+                    <img src="../resources/star-empty.svg" alt="Empty star">
+                    <img src="../resources/star-empty.svg" alt="Empty star">
+                </div>
+                <p>HSempill, 25/07/2023</p>
+                <p><strong>Constantly having issues and being signed out</strong></p>
+                <p>Infuriating. It's very poorly designed, I hate having to choose my favourite cinema every time I open the app like I'm just going to randomly choose another one for the fun of it. It's easier to use the website than the useless app.”</p>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="section-project">
+            <h3>Goal</h3>
+            <p>Design a better user experience while maintaining the general look and feel of the app.</p>
+        </div>
+
+        <hr>
+
+        <div class="section-project">
+            <h3>Existing Product</h3>
+            <div class="pictures-container">
+                <img src="../resources/odeon/existing-1.svg" alt="existing 1">
+                <img src="../resources/odeon/existing-2.svg" alt="existing 2">
+                <img src="../resources/odeon/existing-3.svg" alt="existing 3">
+                <img src="../resources/odeon/existing-4.svg" alt="existing 4">
+            </div>
+            <img src="../resources/odeon/existing-user-flow.jpeg" alt="Existing user flow" class="image">
+                <ul>
+                    <li>Overall, the UI is effective and aligned with the brand, but the UX needs improvement for a more intuitive experience.</li>
+                    <li>Lack of hierarchy in app organisation; important features and secondary actions share the same level.</li>
+                    <li>Two key features: booking a movie and viewing a ticket. Booking is intuitive, but accessing booked tickets is challenging.</li>
+                    <li>Membership options are only available on the website and not promoted effectively; suggesting they can be integrated into the app as a modal.</li>
+                    <p>The redesign will, therefore, focus mainly on the <strong>user experience</strong>, the <strong>hierarchy</strong>, and the <strong>organisation</strong> of the app.</p>
+                </ul>
+        </div>
+
+        <hr>
+
+        <div class="section-project">
+            <h3>User Interviews</h3>
+            <p>I conducted interviews with three typical movie-goers, and here are the findings:</p>
+            <div class="user-interviews-container">
+                <div class="user-interview">
+                    <img src="../resources/odeon/lenard.svg" alt="Lenard profile picture" class="user-image">
+                    <p><strong>Lenard, 35, My Limitless Plus Odeon membership.</strong></p>
+                    <p>Lenard goes to the movies 3 / 4 times a month. When going to the cinema, he only goes to Odeon and has the My Limitless Plus membership. He usually alternates between 5 Odeon locations, all around the city centre. When booking a ticket, Lenard uses the app rather than the website. He uses it only when he wants to book tickets. Since he has been using the app for a long time, he says he's already familiar with its functionality. However, since he likes attending different cinema locations, he said it would be useful to have a <strong>map view of the cinemas</strong>, and not only a list in a dropdown menu. Also, <strong>cancelling or pausing the membership is very difficult</strong>. He says that the current way of <strong>booking tickets is relatively easy</strong>.</p>
+                </div>
+                <div class="user-interview">
+                    <img src="../resources/odeon/ili.svg" alt="Ili profile picture" class="user-image">
+                    <p><strong>Ili, 26, User of the competition.</strong></p>
+                    <p>Ili goes to the cinema once every few months and she doesn't have any cinema membership. She usually goes to Vue (Odeon's competition), or to a local cinema in her neighbourhood. She often tries different locations and chooses it according to the hour that works best for her. When booking a ticket she usually does it through the website. The most important tasks she wishes to perform when using a cinema app are <strong>booking a ticket</strong> and <strong>accessing her ticket</strong>.</p>
+                </div>
+                <div class="user-interview">
+                    <img src="../resources/odeon/edoardo.svg" alt="Edoardo profile picture" class="user-image">
+                    <p><strong>Edoardo, 29, Occasional Odeon user.</strong></p>
+                    <p>Edoardo attends the movies once every two months, and when he does, he exclusively chooses Odeon. He consistently goes to the same cinema location, situated near his home, and he values that the app saves it as his favourite location. When booking a ticket, Edoardo opts for the app instead of the website. He not only uses it for ticket reservations but also for simply <strong>checking which movies are currently playing</strong>. Edoardo expresses a desire for <strong>easier access to his purchased tickets</strong>, suggesting features such as exporting them to his Apple Wallet or having them readily available on the Home page. Additionally, he finds pre-ordering a movie several weeks in advance less straightforward. Reflecting on his initial experience with the app, he mentions a challenge in understanding that he had to tap the film screening time for booking a ticket. However, he emphasises that the overall ticket <strong>booking process is generally fast</strong>.</p>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="section-project">
+            <h3>Problems</h3>
+            <ol>
+                <li>The navigation menu currently necessitates more taps, resulting in reduced visibility of the app's options.</li>
+                <li>The features present in the navigation menu do not all carry the same importance for the user.</li>
+                <li>After purchasing, tickets are challenging to access.</li>
+                <li>Exploring cinema locations is not intuitive in the current design.</li>
+                <li>Cancelling or pausing the membership poses difficulty.</li>
+                <li>The process of booking tickets ahead of time lacks ease and user-friendliness.</li>
+            </ol>
+        </div>
+
+        <hr>
+
+        <div class="section-project">
+            <h3>Competitive Analysis</h3>
+            <p>Before initiating design iterations, a comprehensive understanding of the market was crucial. I conducted an analysis of the onboarding flows and paywalls of successful competitors, including:</p>
+            <div class="competitors-container">
+                <div class="competitor">
+                    <img src="../resources/odeon/competitors/vue.svg" alt="Vue logo" class="competitors-logo">
+                    Vue
+                </div>
+                <div class="competitor">
+                    <img src="../resources/odeon/competitors/ticketmaster.svg" alt="Ticket Master logo" class="competitors-logo">
+                    Ticket Master
+                </div>
+                <div class="competitor">
+                    <img src="../resources/odeon/competitors/cineworld.svg" alt="Cineworld logo" class="competitors-logo">
+                    Cineworld
+                </div>
+                <div class="competitor">
+                    <img src="../resources/odeon/competitors/amc.svg" alt="AMC Cinemas logo" class="competitors-logo">
+                    AMC Cinemas
+                </div>
+            </div>
+            <img src="../resources/odeon/vue-user-flow.jpeg" alt="Vue user flow" class="image">
+            <img src="../resources/odeon/ticket-master-user-flow.jpeg" alt="Ticket Master user flow" class="image">
+            <p>Some things I've learned</p>
+            <ol>
+                <li>
+                    <p><strong>Tab Bar Navigation</strong></p>
+                    <p>All apps use a Tab Bar instead of a Navigation menu. Implementing a tab bar for primary navigation simplifies user interaction, making it easy to switch between key sections of the app.</p>
+                </li>
+                <li>
+                    <p><strong>Dedicated Ticket Section</strong></p>
+                    <p>Providing a dedicated section for booked tickets ensures users can easily access and manage their reservations without unnecessary navigation.</p>
+                </li>
+                <li>
+                    <p><strong>Visual Engagement with Images</strong></p>
+                    <p>Maximising the size of film/event images enhances visual appeal, attracting users and creating a more immersive experience.</p>
+                </li>
+                <li>
+                    <p><strong>Contextual Booking Options</strong></p>
+                    <p>Offering booking functionality from various locations, such as the film page or a quick book tab, allows users to initiate the booking process seamlessly.</p>
+                </li>
+                <li>
+                    <p><strong>Dark Colour Palette</strong></p>
+                    <p>Using a relatively dark colour palette can contribute to a cinematic and immersive feel, aligning with the theme of movie-related content.</p>
+                </li>
+                <li>
+                    <p><strong>Intuitive Search and Filters</strong></p>
+                    <p>Implementing a user-friendly search feature and effective filters helps users quickly find the movies or events they are interested in.</p>
+                </li>
+                <li>
+                    <p><strong>Seamless Membership Integration</strong></p>
+                    <p>Integrating membership options seamlessly into the app, possibly as a modal, ensures users are aware of and can access exclusive benefits.</p>
+                </li>
+                <li>
+                    <p><strong>Consistent Branding</strong></p>
+                    <p>Maintaining consistent branding elements throughout the app reinforces the association with the overall brand and marketing strategies.</p>
+                </li>
+                <li>
+                    <p><strong>Video-Based Paywalls</strong></p>
+                    <p>Vixer and Temply serve as good examples of simple video-based paywalls.</p>
+                </li>
+            </ol>
+            <p>By studying these patterns in movie apps, I could gain insights into creating user-friendly interfaces that prioritise functionality, aesthetics, and overall user satisfaction.</p>
+        </div>
+
+        <hr>
+
+        <div class="section-project">
+            <h3>Solutions</h3>
+                <div class="solutions-numbers-container">
+                    <span class="solutions-numbers-text">1</span>
+                    <div class="solutions-container solutions-odeon">
+                        <p><strong>Tab Bar Implementation</strong></p>
+                        <p>Introducing a tab bar eliminates the need to redundantly state sections at the top, such as "films" or "food & drinks," providing more space to incorporate a cinema selection feature.</p>
+                    </div>
+                </div>
+                <div class="solutions-numbers-container">
+                    <span class="solutions-numbers-text">2</span>
+                    <div class="solutions-container solutions-odeon">
+                        <p><strong>Hierarchy Refinement</strong></p>
+                        <p>Creating a more intuitive hierarchy involves emphasising the most useful features while concealing others to declutter the interface.</p>
+                    </div>
+                </div>
+                <div class="solutions-numbers-container">
+                    <span class="solutions-numbers-text">3</span>
+                    <div class="solutions-container solutions-odeon">
+                        <p><strong>Enhanced Ticket Access</strong></p>
+                        <p>Prioritising easy access to booked tickets ensures users can efficiently locate and manage their reservations.</p>
+                    </div>
+                </div>
+                <div class="solutions-numbers-container">
+                    <span class="solutions-numbers-text">4</span>
+                    <div class="solutions-container solutions-odeon">
+                        <p><strong>Cinema Selection Variety</strong></p>
+                        <p>Expanding choices for cinema selection includes the possibility to choose from multiple cinemas and introducing a map view for a more interactive and user-friendly experience.</p>
+                    </div>
+                </div>
+                <div class="solutions-numbers-container">
+                    <span class="solutions-numbers-text">5</span>
+                    <div class="solutions-container solutions-odeon">
+                        <p><strong>Membership Settings Accessibility</strong></p>
+                        <p>Facilitating easy access to membership settings addresses the challenge of cancelling or pausing memberships.</p>
+                    </div>
+                </div>
+                <div class="solutions-numbers-container">
+                    <span class="solutions-numbers-text">6</span>
+                    <div class="solutions-container solutions-odeon">
+                        <p><strong>Calendar View for Booking</strong></p>
+                        <p>Incorporating a calendar view simplifies the process of selecting a date for booking tickets in advance, enhancing user convenience.</p>
+                    </div>
+                </div>
+                <div class="solutions-numbers-container">
+                    <span class="solutions-numbers-text">7</span>
+                    <div class="solutions-container solutions-odeon">
+                        <p><strong>Preservation and Enhancement of Key Features</strong></p>
+                        <p>Retaining and improving key aspects such as the brand's general appearance, user interface, fast booking process, and straightforward access to food and drinks.</p>
+                    </div>
+                </div>
+        </div>
+
+        <hr>
+
+        <div class="section-project">
+            <h3>Low Fidelity Wireframes</h3>
+            <img src="../resources/odeon/wireframes.jpg" alt="Wireframes" class="image">
+        </div>
+
+        <hr>
+
+        <div class="section-project">
+            <h3>Style-guide</h3>
+            <img class="image-preview image-style-guide" src="../resources/odeon/style-guide.jpg" alt="Odeon style-guide">
+        </div>
+
+        <hr>
+
+        <div class="section-project final-design-container">
+            <h3>Final Design</h3>
+            <div class="final-design-phone">
+                <img src="../resources/odeon/final-design/home.svg" alt="Final desing home">
+                <p>Explore existing and upcoming films from a variety of cinemas.</p>
+            </div>
+            <div class="final-design-phone">
+                <img src="../resources/odeon/final-design/myodeon.svg" alt="Final desing myodeon">
+                <p>Fast and highlighted access to your account and to your purchased tickets.</p>
+            </div>
+            <div class="final-design-phone">
+                <img src="../resources/odeon/final-design/food.svg" alt="Final desing food">
+                <p>Food & drinks can easily be ordered at any cinema.</p>
+            </div>
+            <div class="final-design-phone">
+                <img src="../resources/odeon/final-design/book.svg" alt="Final desing book">
+                <p>Quickly booking your cinema tickets, from any page and at any moment.</p>
+            </div>
+            <div class="final-design-phone">
+                <img src="../resources/odeon/final-design/paywall.svg" alt="Final desing paywall">
+                <p>Paywall that will encourage and expose more users to different membership possibilities.</p>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="section-project">
+            <h3>Reflections</h3>
+            <ul>
+                <li>User interviewing was invaluable for gaining insights into user experiences, motivations, desires and preferences. This project has shown me that it is vital for creating a user-centric product by uncovering user needs, identifying pain points, understanding motivations, and ensuring that design decisions are well-informed and validated through direct user input.</li>
+                <li>User testing of the redesigned app will be necessary for evaluating the effectiveness of the proposed changes. Feedback from user testing will guide further refinements and enhancements. The goal is to ensure the app aligns with user expectations and delivers a seamless, user-friendly experience.</li>
+            </ul>
+        </div>
+
+        <div class="bring-to-top-page">
+            <hr>
+            <a class="arrow-up" href="#"><img src="../resources/arrow-up.svg" alt="arrow-up"></a>
+        </div>
+
+        <div class="previous-next-project">
+            <a class="button-more" href="../projects/photo-editor.html">
+                <img src="../resources/arrow-forward.svg" alt="arrow forward" class="arrow-forward arrow-previous"/>
+                <span>Previous project</span>
+            </a>
+            <a class="button-more" href="../projects/growit.html">
+                <span>Next project</span>
+                <img src="../resources/arrow-forward.svg" alt="arrow forward" class="arrow-forward"/>
+            </a>
+        </div>
+        
+        <a class="button" href="contact.html">Get in touch</a>
+
+    </main>
+
+    <hr>
+
+        <footer>
+            <ul class="social-icons">
+                <li><a href="mailto:karin.kay9@gmail.com?subject=Hey%20there!"><img src="../resources/contacts/email.svg" alt="envelope symbol"/></a></li>
+                <li><a href="https://www.linkedin.com/in/karin-kay-336382173/" target="_blank"><img src="../resources/contacts/linkedin.svg" alt="linkedin symbol"/></a></li>
+                <li><a href="https://www.instagram.com/karinkay1/" target="_blank"><img src="../resources/contacts/instagram.svg" alt="instagram symbol"/></a></li>
+                <li><a href="https://www.facebook.com/karin.kay" target="_blank"><img src="../resources/contacts/facebook.svg" alt="facebook symbol"/></a></li>
+            </ul>
+            <p class="footer-text">&copy; <time datetime="2023">2023</time> Designed and developed by Karin Kay Cappello.</p>
+        </footer>
+   
+</body>
+</html>
