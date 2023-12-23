@@ -13,21 +13,21 @@
     <header class="nav-container expandable">
         <div class="nav-buttons expandable">
             <a href="index.html">
-                <img src="resources/logo.svg" alt="KKC logo" class="logo expandable"/>
+                <img class="logo expandable" src="resources/logo.svg" alt="KKC logo"/>
             </a>  
             <div class="hamburger-icon expandable" onclick="onHamburgerIconClick()"></div>   
         </div>
         <nav class="nav-list expandable">
             <ul class="remove-list-bullet">
                 <li><a href="index.html">Home</a></li>
-                <li><a class="another-page" href="projects.html">Projects</a></li>
-                <li><a class="another-page" href="about.html">About</a></li>
-                <li><a class="another-page" href="contact.html">Contact</a></li>
+                <li><a class="nav-not-current" href="projects.html">Projects</a></li>
+                <li><a class="nav-not-current" href="about.html">About</a></li>
+                <li><a class="nav-not-current" href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <div class="page page-full">
+    <div class="page page-hero">
         <section class="hero">
             <p>Hi, I'm Karin Kay Cappello.</p>
             <h1>I'm a UX/UI designer.</h1>
@@ -39,7 +39,7 @@
         </section>
     </div>
 
-    <main class="page page-home">
+    <main class="page page-home-content">
 
         <section class="section">
             <h2>This is a bit about me...</h2>
@@ -58,32 +58,37 @@
 
         <section class="section">
             <h2>My Projects</h2>
-            <div class="project-preview project-home">
-                <div class="project-preview project-image">
-                    <a href="projects/photo-editor.html">
-                        <img src="resources/photo-editor/main1.jpg" alt="main Photo-editor screen" class="phone"/>
-                    </a>
+            <div class="project-preview">
+                <div class="project-content">
                     <div class="carousel">
+                        <a href="projects/photo-editor.html">
+                            <img class="phone" src="resources/photo-editor/main1.jpg" alt="main Photo-editor screen"/>
+                        </a>
+                        <a href="projects/photo-editor.html">
+                            <img class="phone" src="resources/photo-editor/main2.jpg" alt="main Photo-editor screen"/>
+                        </a>
+                        <!-- <div class="carousel-buttons">
                         <img src="resources/circle-empty.svg" alt="Empty circle">
                         <img src="resources/circle-full.svg" alt="Full circle">
+                    </div> -->
                     </div>
                 </div>
-                <div class="project-title">
+                <div class="project-content">
                     <h3>Photo Editor New Onboarding & Paywall</h3>
                     <p>Edit images with unique filters and effects, or generate AI videos</p>
                     <a class="button-more" href="projects.html">
                         <span>Learn more</span>
-                        <img src="resources/arrow-forward.svg" alt="arrow forward" class="arrow-forward"/>
+                        <img class="arrow-forward" src="resources/arrow-forward.svg" alt="arrow forward"/>
                     </a>
                 </div>
-                <a class="button button-secondary" href="projects.html">Explore all projects</a>
             </div>
+            <a class="button button-secondary" href="projects.html">Explore all projects</a>
         </section>
 
         <hr>
 
         <div class="button-container">
-            <h2>Let's work together</h2>
+            <h3>Let's work together</h3>
             <a class="button" href="contact.html">Get in touch</a>
         </div>
 
@@ -92,13 +97,13 @@
     <hr>
 
         <footer>
-            <ul class="social-icons">
+            <ul class="social-icons remove-list-bullet">
                 <li><a href="mailto:karin.kay9@gmail.com?subject=Hey%20there!"><img src="resources/contacts/email.svg" alt="envelope symbol"/></a></li>
                 <li><a href="https://www.linkedin.com/in/karin-kay-336382173/" target="_blank"><img src="resources/contacts/linkedin.svg" alt="linkedin symbol"/></a></li>
                 <li><a href="https://www.instagram.com/karinkay1/" target="_blank"><img src="resources/contacts/instagram.svg" alt="instagram symbol"/></a></li>
                 <li><a href="https://www.facebook.com/karin.kay" target="_blank"><img src="resources/contacts/facebook.svg" alt="facebook symbol"/></a></li>
             </ul>
-            <p class="footer-text">&copy; <time datetime="2023">2023</time> Designed and developed by Karin Kay Cappello.</p>
+            <p class="caption">&copy; <time datetime="2023">2023</time> Designed and developed by Karin Kay Cappello.</p>
         </footer>
 
 </body>

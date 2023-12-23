@@ -13,31 +13,31 @@
     <header class="nav-container expandable">
         <div class="nav-buttons expandable">
             <a href="../index.html">
-                <img src="../resources/logo.svg" alt="KKC logo" class="logo expandable"/>
+                <img class="logo expandable" src="../resources/logo.svg" alt="KKC logo"/>
             </a>  
             <div class="hamburger-icon expandable" onclick="onHamburgerIconClick()"></div>   
         </div>
         <nav class="nav-list expandable">
-            <ul>
-                <li><a class="another-page" href="../index.html">Home</a></li>
+            <ul class="remove-list-bullet">
+                <li><a class="nav-not-current" href="../index.html">Home</a></li>
                 <li><a href="../projects.html">Projects</a></li>
-                <li><a class="another-page" href="../about.html">About</a></li>
-                <li><a class="another-page" href="../contact.html">Contact</a></li>
+                <li><a class="nav-not-current" href="../about.html">About</a></li>
+                <li><a class="nav-not-current" href="../contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main class="page">
 
-        <div class="project-preview project-home">
-            <div class="project-preview project-image">
-                <img src="../resources/photo-editor/main1.svg" alt="main Photo-editor screen" class="phone"/>
-                <div class="carousel">
+        <div class="project-preview">
+            <div class="project-content">
+                <img class="phone" src="../resources/photo-editor/main1.jpg" alt="main Photo-editor screen"/>
+                <div class="carousel-buttons">
                     <img src="../resources/circle-empty.svg" alt="Empty circle">
                     <img src="../resources/circle-full.svg" alt="Full circle">
                 </div>
             </div>
-            <div class="project-title">
+            <div class="project-content">
                 <h3>Photo Editor New Onboarding & Paywall</h3>
                 <div class="project-subtitle">
                     <p>Edit images with unique filters and effects, or generate AI videos</p>
@@ -72,24 +72,26 @@
         <div class="section-project">
             <h3>Existing Product</h3>
             <p><strong>Onboarding Flow</strong></p>
-            <div class="pictures-container">
-                <img class="picture-display" src="../resources/photo-editor/existing-onboarding-1.jpg" alt="existing onboarding 1">
-                <img class="picture-display" src="../resources/photo-editor/existing-onboarding-2.jpg" alt="existing onboarding 2">
-                <img class="picture-display" src="../resources/photo-editor/existing-onboarding-3.jpg" alt="existing onboarding 3">
-                <img class="picture-display" src="../resources/photo-editor/existing-onboarding-4.jpg" alt="existing onboarding 4">
-                <img class="picture-display" src="../resources/photo-editor/existing-onboarding-5.jpg" alt="existing onboarding 5">
-                <img class="picture-display" src="../resources/photo-editor/existing-onboarding-6.jpg" alt="existing onboarding 6">
-                <img class="picture-display" src="../resources/photo-editor/existing-onboarding-7.jpg" alt="existing onboarding 7">
-                <img class="picture-display" src="../resources/photo-editor/existing-onboarding-8.jpg" alt="existing onboarding 8">
+            <div class="scroll-container">
+                <img class="scroll-picture-display" src="../resources/photo-editor/existing-onboarding-1.jpg" alt="existing onboarding 1">
+                <img class="scroll-picture-display" src="../resources/photo-editor/existing-onboarding-2.jpg" alt="existing onboarding 2">
+                <img class="scroll-picture-display" src="../resources/photo-editor/existing-onboarding-3.jpg" alt="existing onboarding 3">
+                <img class="scroll-picture-display" src="../resources/photo-editor/existing-onboarding-4.jpg" alt="existing onboarding 4">
+                <img class="scroll-picture-display" src="../resources/photo-editor/existing-onboarding-5.jpg" alt="existing onboarding 5">
+                <img class="scroll-picture-display" src="../resources/photo-editor/existing-onboarding-6.jpg" alt="existing onboarding 6">
+                <img class="scroll-picture-display" src="../resources/photo-editor/existing-onboarding-7.jpg" alt="existing onboarding 7">
+                <img class="scroll-picture-display" src="../resources/photo-editor/existing-onboarding-8.jpg" alt="existing onboarding 8">
             </div>
             <p><strong>Paywall</strong></p>
-            <div class="pictures-container">
-                <img class="picture-display" src="../resources/photo-editor/existing-paywall-1.jpg" alt="existing paywall 1">
-                <img class="picture-display" src="../resources/photo-editor/existing-paywall-2.jpg" alt="existing paywall 2">
-                <img class="picture-display" src="../resources/photo-editor/existing-paywall-3.jpg" alt="existing paywall 3">
-                <img class="picture-display" src="../resources/photo-editor/existing-paywall-4.jpg" alt="existing paywall 4">
+            <div class="scroll-container">
+                <img class="scroll-picture-display" src="../resources/photo-editor/existing-paywall-1.jpg" alt="existing paywall 1">
+                <img class="scroll-picture-display" src="../resources/photo-editor/existing-paywall-2.jpg" alt="existing paywall 2">
+                <img class="scroll-picture-display" src="../resources/photo-editor/existing-paywall-3.jpg" alt="existing paywall 3">
+                <img class="scroll-picture-display" src="../resources/photo-editor/existing-paywall-4.jpg" alt="existing paywall 4">
             </div>
         </div>
+
+        <hr>
 
         <div class="section-project">
             <h3>Research</h3>
@@ -187,6 +189,8 @@
             </div>
             <p>This analysis serves as a foundation for informed design decisions.</p>
         </div>
+
+        <hr>
 
         <div class="section-project">
             <h3>Solutions</h3>
@@ -428,34 +432,36 @@
 
         <div class="bring-to-top-page">
             <hr>
-            <a class="arrow-up" href="#"><img src="../resources/arrow-up.svg" alt="arrow-up"></a>
+            <a class="arrow-up" href="#"><img class="arrow-up-design" src="../resources/arrow-up.svg" alt="arrow-up"></a>
         </div>
 
-        <div class="previous-next-project">
-            <a class="button-more" href="../projects/growit.html">
-                <img src="../resources/arrow-forward.svg" alt="arrow forward" class="arrow-forward arrow-previous"/>
-                <span>Previous project</span>
-            </a>
-            <a class="button-more" href="../projects/odeon-redesign.html">
-                <span>Next project</span>
-                <img src="../resources/arrow-forward.svg" alt="arrow forward" class="arrow-forward"/>
-            </a>
+        <div class="button-container">
+            <div class="previous-next-project">
+                <a class="button-more" href="../projects/growit.html">
+                    <img class="arrow-forward arrow-previous" src="../resources/arrow-forward.svg" alt="arrow forward"/>
+                    <span>Previous project</span>
+                </a>
+                <a class="button-more" href="../projects/odeon-redesign.html">
+                    <span>Next project</span>
+                    <img class="arrow-forward" src="../resources/arrow-forward.svg" alt="arrow forward"/>
+                </a>
+            </div>
+            
+            <a class="button" href="../contact.html">Get in touch</a>
         </div>
-        
-        <a class="button" href="contact.html">Get in touch</a>
 
     </main>
 
     <hr>
 
         <footer>
-            <ul class="social-icons">
+            <ul class="social-icons remove-list-bullet">
                 <li><a href="mailto:karin.kay9@gmail.com?subject=Hey%20there!"><img src="../resources/contacts/email.svg" alt="envelope symbol"/></a></li>
                 <li><a href="https://www.linkedin.com/in/karin-kay-336382173/" target="_blank"><img src="../resources/contacts/linkedin.svg" alt="linkedin symbol"/></a></li>
                 <li><a href="https://www.instagram.com/karinkay1/" target="_blank"><img src="../resources/contacts/instagram.svg" alt="instagram symbol"/></a></li>
                 <li><a href="https://www.facebook.com/karin.kay" target="_blank"><img src="../resources/contacts/facebook.svg" alt="facebook symbol"/></a></li>
             </ul>
-            <p class="footer-text">&copy; <time datetime="2023">2023</time> Designed and developed by Karin Kay Cappello.</p>
+            <p class="caption">&copy; <time datetime="2023">2023</time> Designed and developed by Karin Kay Cappello.</p>
         </footer>
     
 </body>

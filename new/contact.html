@@ -13,22 +13,22 @@
     <header class="nav-container expandable">
         <div class="nav-buttons expandable">
             <a href="index.html">
-                <img src="resources/logo.svg" alt="KKC logo" class="logo expandable"/>
+                <img class="logo expandable" src="resources/logo.svg" alt="KKC logo"/>
             </a>  
             <div class="hamburger-icon expandable" onclick="onHamburgerIconClick()"></div>   
         </div>
         <nav class="nav-list expandable">
-            <ul>
-                <li><a class="another-page" href="index.html">Home</a></li>
-                <li><a class="another-page" href="projects.html">Projects</a></li>
-                <li><a class="another-page" href="about.html">About</a></li>
+            <ul class="remove-list-bullet">
+                <li><a class="nav-not-current" href="index.html">Home</a></li>
+                <li><a class="nav-not-current" href="projects.html">Projects</a></li>
+                <li><a class="nav-not-current" href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
     
     <main class="page">
-        <section class="section-secondary section-contact">
+        <section class="section">
             <h1>Get in touch.</h1>
             <div class="contact">
                 <a href="mailto:karin.kay9@gmail.com?subject=Hey%20there!">
@@ -48,12 +48,21 @@
                     +39 3458801741
                 </a>
             </div>
+            <div class="contact">
+                <a href="https://www.linkedin.com/in/karin-kay-336382173/">
+                    <img src="resources/contacts/linkedin-big.svg" alt="Linkedin symbol"/>
+                </a>
+                <p><strong>Linkedin</strong></p>
+                <a href="https://www.linkedin.com/in/karin-kay-336382173/">
+                    Karin Kay Cappello
+                </a>
+            </div>
         </section>
 
         <hr>
 
-        <div class="button-container secondary">
-            <p>Want to see my works?</p>
+        <div class="button-container">
+            <p><strong>Want to see my works?</strong></p>
             <a class="button" href="projects.html">Explore all projects</a>
         </div>
 
@@ -62,13 +71,13 @@
     <hr>
 
         <footer>
-            <ul class="social-icons">
+            <ul class="social-icons remove-list-bullet">
                 <li><a href="mailto:karin.kay9@gmail.com?subject=Hey%20there!"><img src="resources/contacts/email.svg" alt="envelope symbol"/></a></li>
                 <li><a href="https://www.linkedin.com/in/karin-kay-336382173/" target="_blank"><img src="resources/contacts/linkedin.svg" alt="linkedin symbol"/></a></li>
                 <li><a href="https://www.instagram.com/karinkay1/" target="_blank"><img src="resources/contacts/instagram.svg" alt="instagram symbol"/></a></li>
                 <li><a href="https://www.facebook.com/karin.kay" target="_blank"><img src="resources/contacts/facebook.svg" alt="facebook symbol"/></a></li>
             </ul>
-            <p class="footer-text">&copy; <time datetime="2023">2023</time> Designed and developed by Karin Kay Cappello.</p>
+            <p class="caption">&copy; <time datetime="2023">2023</time> Designed and developed by Karin Kay Cappello.</p>
         </footer>
 
 </body>

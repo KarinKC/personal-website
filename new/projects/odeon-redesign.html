@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html>project
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -13,31 +13,31 @@
     <header class="nav-container expandable">
         <div class="nav-buttons expandable">
             <a href="../index.html">
-                <img src="../resources/logo.svg" alt="KKC logo" class="logo expandable"/>
+                <img class="logo expandable" src="../resources/logo.svg" alt="KKC logo"/>
             </a>  
             <div class="hamburger-icon expandable" onclick="onHamburgerIconClick()"></div>   
         </div>
         <nav class="nav-list expandable">
-            <ul>
-                <li><a class="another-page" href="../index.html">Home</a></li>
+            <ul class="remove-list-bullet">
+                <li><a class="nav-not-current" href="../index.html">Home</a></li>
                 <li><a href="../projects.html">Projects</a></li>
-                <li><a class="another-page" href="../about.html">About</a></li>
-                <li><a class="another-page" href="../contact.html">Contact</a></li>
+                <li><a class="nav-not-current" href="../about.html">About</a></li>
+                <li><a class="nav-not-current" href="../contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main class="page">
 
-        <div class="project-preview project-home">
-            <div class="project-preview project-image">
-                <img src="../resources/odeon/main1.svg" alt="Main Odeon Redesign screen" class="phone"/>
-                <div class="carousel">
+        <div class="project-preview">
+            <div class="project-content">
+                <img class="phone" src="../resources/odeon/main1.jpg" alt="Main Odeon Redesign screen"/>
+                <div class="carousel-buttons">
                     <img src="../resources/circle-empty.svg" alt="Empty circle">
                     <img src="../resources/circle-full.svg" alt="Full circle">
                 </div>
             </div>
-            <div class="project-title">
+            <div class="project-content">
                 <h3>Odeon Redesign</h3>
                 <div class="project-subtitle">
                     <p>Redesigning the cinema experience</p>
@@ -103,13 +103,13 @@
 
         <div class="section-project">
             <h3>Existing Product</h3>
-            <div class="pictures-container">
-                <img src="../resources/odeon/existing-1.svg" alt="existing 1">
-                <img src="../resources/odeon/existing-2.svg" alt="existing 2">
-                <img src="../resources/odeon/existing-3.svg" alt="existing 3">
-                <img src="../resources/odeon/existing-4.svg" alt="existing 4">
+            <div class="scroll-container">
+                <img class="scroll-picture-display" src="../resources/odeon/existing-1.svg" alt="existing 1">
+                <img class="scroll-picture-display" src="../resources/odeon/existing-2.svg" alt="existing 2">
+                <img class="scroll-picture-display" src="../resources/odeon/existing-3.svg" alt="existing 3">
+                <img class="scroll-picture-display" src="../resources/odeon/existing-4.svg" alt="existing 4">
             </div>
-            <img src="../resources/odeon/existing-user-flow.jpeg" alt="Existing user flow" class="image">
+            <img class="image" src="../resources/odeon/existing-user-flow.jpeg" alt="Existing user flow">
                 <ul>
                     <li>Overall, the UI is effective and aligned with the brand, but the UX needs improvement for a more intuitive experience.</li>
                     <li>Lack of hierarchy in app organisation; important features and secondary actions share the same level.</li>
@@ -126,17 +126,17 @@
             <p>I conducted interviews with three typical movie-goers, and here are the findings:</p>
             <div class="user-interviews-container">
                 <div class="user-interview">
-                    <img src="../resources/odeon/lenard.svg" alt="Lenard profile picture" class="user-image">
+                    <img class="user-image" src="../resources/odeon/lenard.svg" alt="Lenard profile picture">
                     <p><strong>Lenard, 35, My Limitless Plus Odeon membership.</strong></p>
                     <p>Lenard goes to the movies 3 / 4 times a month. When going to the cinema, he only goes to Odeon and has the My Limitless Plus membership. He usually alternates between 5 Odeon locations, all around the city centre. When booking a ticket, Lenard uses the app rather than the website. He uses it only when he wants to book tickets. Since he has been using the app for a long time, he says he's already familiar with its functionality. However, since he likes attending different cinema locations, he said it would be useful to have a <strong>map view of the cinemas</strong>, and not only a list in a dropdown menu. Also, <strong>cancelling or pausing the membership is very difficult</strong>. He says that the current way of <strong>booking tickets is relatively easy</strong>.</p>
                 </div>
                 <div class="user-interview">
-                    <img src="../resources/odeon/ili.svg" alt="Ili profile picture" class="user-image">
+                    <img class="user-image" src="../resources/odeon/ili.svg" alt="Ili profile picture">
                     <p><strong>Ili, 26, User of the competition.</strong></p>
                     <p>Ili goes to the cinema once every few months and she doesn't have any cinema membership. She usually goes to Vue (Odeon's competition), or to a local cinema in her neighbourhood. She often tries different locations and chooses it according to the hour that works best for her. When booking a ticket she usually does it through the website. The most important tasks she wishes to perform when using a cinema app are <strong>booking a ticket</strong> and <strong>accessing her ticket</strong>.</p>
                 </div>
                 <div class="user-interview">
-                    <img src="../resources/odeon/edoardo.svg" alt="Edoardo profile picture" class="user-image">
+                    <img class="user-image" src="../resources/odeon/edoardo.svg" alt="Edoardo profile picture">
                     <p><strong>Edoardo, 29, Occasional Odeon user.</strong></p>
                     <p>Edoardo attends the movies once every two months, and when he does, he exclusively chooses Odeon. He consistently goes to the same cinema location, situated near his home, and he values that the app saves it as his favourite location. When booking a ticket, Edoardo opts for the app instead of the website. He not only uses it for ticket reservations but also for simply <strong>checking which movies are currently playing</strong>. Edoardo expresses a desire for <strong>easier access to his purchased tickets</strong>, suggesting features such as exporting them to his Apple Wallet or having them readily available on the Home page. Additionally, he finds pre-ordering a movie several weeks in advance less straightforward. Reflecting on his initial experience with the app, he mentions a challenge in understanding that he had to tap the film screening time for booking a ticket. However, he emphasises that the overall ticket <strong>booking process is generally fast</strong>.</p>
                 </div>
@@ -164,24 +164,24 @@
             <p>Before initiating design iterations, a comprehensive understanding of the market was crucial. I conducted an analysis of the onboarding flows and paywalls of successful competitors, including:</p>
             <div class="competitors-container">
                 <div class="competitor">
-                    <img src="../resources/odeon/competitors/vue.svg" alt="Vue logo" class="competitors-logo">
+                    <img class="competitors-logo" src="../resources/odeon/competitors/vue.svg" alt="Vue logo">
                     Vue
                 </div>
                 <div class="competitor">
-                    <img src="../resources/odeon/competitors/ticketmaster.svg" alt="Ticket Master logo" class="competitors-logo">
+                    <img class="competitors-logo" src="../resources/odeon/competitors/ticketmaster.svg" alt="Ticket Master logo">
                     Ticket Master
                 </div>
                 <div class="competitor">
-                    <img src="../resources/odeon/competitors/cineworld.svg" alt="Cineworld logo" class="competitors-logo">
+                    <img class="competitors-logo" src="../resources/odeon/competitors/cineworld.svg" alt="Cineworld logo">
                     Cineworld
                 </div>
                 <div class="competitor">
-                    <img src="../resources/odeon/competitors/amc.svg" alt="AMC Cinemas logo" class="competitors-logo">
+                    <img class="competitors-logo" src="../resources/odeon/competitors/amc.svg" alt="AMC Cinemas logo">
                     AMC Cinemas
                 </div>
             </div>
-            <img src="../resources/odeon/vue-user-flow.jpeg" alt="Vue user flow" class="image">
-            <img src="../resources/odeon/ticket-master-user-flow.jpeg" alt="Ticket Master user flow" class="image">
+            <img class="image" src="../resources/odeon/vue-user-flow.jpeg" alt="Vue user flow">
+            <img class="image" src="../resources/odeon/ticket-master-user-flow.jpeg" alt="Ticket Master user flow">
             <p>Some things I've learned</p>
             <ol>
                 <li>
@@ -283,7 +283,7 @@
 
         <div class="section-project">
             <h3>Low Fidelity Wireframes</h3>
-            <img src="../resources/odeon/wireframes.jpg" alt="Wireframes" class="image">
+            <img class="image" src="../resources/odeon/wireframes.jpg" alt="Wireframes">
         </div>
 
         <hr>
@@ -331,34 +331,36 @@
 
         <div class="bring-to-top-page">
             <hr>
-            <a class="arrow-up" href="#"><img src="../resources/arrow-up.svg" alt="arrow-up"></a>
+            <a class="arrow-up" href="#"><img class="arrow-up-design" src="../resources/arrow-up.svg" alt="arrow-up"></a>
         </div>
 
-        <div class="previous-next-project">
-            <a class="button-more" href="../projects/photo-editor.html">
-                <img src="../resources/arrow-forward.svg" alt="arrow forward" class="arrow-forward arrow-previous"/>
-                <span>Previous project</span>
-            </a>
-            <a class="button-more" href="../projects/growit.html">
-                <span>Next project</span>
-                <img src="../resources/arrow-forward.svg" alt="arrow forward" class="arrow-forward"/>
-            </a>
+        <div class="button-container">
+            <div class="previous-next-project">
+                <a class="button-more" href="../projects/photo-editor.html">
+                    <img class="arrow-forward arrow-previous" src="../resources/arrow-forward.svg" alt="arrow forward"/>
+                    <span>Previous project</span>
+                </a>
+                <a class="button-more" href="../projects/growit.html">
+                    <span>Next project</span>
+                    <img class="arrow-forward" src="../resources/arrow-forward.svg" alt="arrow forward"/>
+                </a>
+            </div>
+            
+            <a class="button" href="../contact.html">Get in touch</a>
         </div>
         
-        <a class="button" href="contact.html">Get in touch</a>
-
     </main>
 
     <hr>
 
         <footer>
-            <ul class="social-icons">
+            <ul class="social-icons remove-list-bullet">
                 <li><a href="mailto:karin.kay9@gmail.com?subject=Hey%20there!"><img src="../resources/contacts/email.svg" alt="envelope symbol"/></a></li>
                 <li><a href="https://www.linkedin.com/in/karin-kay-336382173/" target="_blank"><img src="../resources/contacts/linkedin.svg" alt="linkedin symbol"/></a></li>
                 <li><a href="https://www.instagram.com/karinkay1/" target="_blank"><img src="../resources/contacts/instagram.svg" alt="instagram symbol"/></a></li>
                 <li><a href="https://www.facebook.com/karin.kay" target="_blank"><img src="../resources/contacts/facebook.svg" alt="facebook symbol"/></a></li>
             </ul>
-            <p class="footer-text">&copy; <time datetime="2023">2023</time> Designed and developed by Karin Kay Cappello.</p>
+            <p class="caption">&copy; <time datetime="2023">2023</time> Designed and developed by Karin Kay Cappello.</p>
         </footer>
    
 </body>
