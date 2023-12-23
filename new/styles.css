@@ -19,7 +19,7 @@ body {
   flex-direction: column;
   align-items: center;
 
-  margin-top: 9.75rem;
+  margin-top: 6.5rem;
   margin-bottom: 2.25rem;
   padding: 0rem 1.5rem;
   gap: 2.25rem;
@@ -29,7 +29,7 @@ body {
 .page-hero {
   padding-right: 0;
   padding-left: 0;
-  margin-top: 7.5rem;
+  margin-top: 4rem;
   margin-bottom: 0;
 }
 
@@ -83,18 +83,22 @@ body {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  height: 7.5rem;
+  height: 4rem;
   padding: 0rem 2rem;
 }
 
 .logo {
   height: 2.5rem;
   width: 2.5rem;
-  filter: invert(19%) sepia(6%) saturate(2052%) hue-rotate(148deg) brightness(95%) contrast(87%);
+  padding: 0.25rem;
 }
 
-.logo.expanded {
-  filter: invert(97%) sepia(3%) saturate(1450%) hue-rotate(164deg) brightness(92%) contrast(105%);
+.logo > path {
+  fill: #2B3B40;
+}
+
+.logo.expanded > path {
+  fill: #DBECF1;
 }
 
 .hamburger-icon {
@@ -897,4 +901,10 @@ td:first-of-type{
   body {
     background-color: #ffffff; /* Red */
   }
+}
+
+
+
+:root {
+  --color-brown: #40302B
 }
