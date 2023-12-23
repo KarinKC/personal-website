@@ -1,3 +1,7 @@
+function onLoad() {
+    // Empty for now.
+}
+
 function onHamburgerIconClick() {
     toggleNavbarExpansion()
 }
