@@ -1,4 +1,12 @@
 function onHamburgerIconClick() {
+    toggleNavbarExpansion()
+}
+
+function onNavContainerClick() {
+    toggleNavbarExpansion()
+}
+
+function toggleNavbarExpansion() {
     const expandableElements = Array.from(document.getElementsByClassName("expandable"));
     toggleClass("expanded", expandableElements);
 }

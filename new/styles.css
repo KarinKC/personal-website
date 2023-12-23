@@ -69,12 +69,11 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
-  background-color: white;
   z-index: 1;
 }
 
 .nav-container.expanded {
-  background-color: #40302B;
+  height: 200%;
 }
 
 .nav-buttons {
@@ -84,7 +83,23 @@ body {
   align-items: center;
   width: 100%;
   height: 4rem;
+  min-height: 4rem;
+  background-color: white;
   padding: 0rem 2rem;
+}
+
+.nav-buttons.expanded {
+  background-color: #40302B;
+}
+
+.nav-overlay {
+  display: none;
+}
+
+.nav-overlay.expanded {
+  display: block;
+  background-color: rgb(43, 59, 64, 0.3);
+  height: 100%;
 }
 
 .logo {
@@ -124,6 +139,7 @@ body {
 
 .nav-list.expanded {
   display: flex;
+  background-color: #40302B;
 }
 
 .nav-list a {
