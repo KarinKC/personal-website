@@ -5,7 +5,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="../styles.css">
     <meta name="theme-color" content="white"/>
-    <meta name='viewport'content='width=device-width, initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover'/>
+    <meta name='viewport'content='width=device-width, initial-scale=1.0, maximum-scale=1.0'/>
     <script src="../code.js"></script>
 </head>
 
@@ -31,11 +31,13 @@
         <div class="nav-overlay expandable" onclick="onNavContainerClick()"></div>
     </header>
 
-    <main class="page">
-
+    <div class="page">
         <div class="project-preview">
             <div class="project-content">
-                <img class="phone" src="../resources/odeon/main1.jpg" alt="Main Odeon Redesign screen"/>
+                <div class="carousel">
+                    <img class="phone" src="../resources/odeon/main1.jpg" alt="main Odeon screen"/>
+                    <img class="phone" src="../resources/odeon/main2.jpg" alt="main Odeon screen"/>
+                </div>
                 <div class="carousel-buttons">
                     <img src="../resources/circle-empty.svg" alt="Empty circle">
                     <img src="../resources/circle-full.svg" alt="Full circle">
@@ -53,6 +55,16 @@
                 </div>
             </div>
         </div>
+
+    </div>
+
+    <hr class="hero-divider">
+
+    <div class="arrow-down">
+        <img class="arrow-down-design" src="../resources/arrow-down.svg" alt="arrow-down">
+    </div>
+
+    <main class="page page-projects">
 
         <div class="section-project">
             <h3>Context</h3>
@@ -131,18 +143,24 @@
             <div class="user-interviews-container">
                 <div class="user-interview">
                     <img class="user-image" src="../resources/odeon/lenard.svg" alt="Lenard profile picture">
-                    <p><strong>Lenard, 35, My Limitless Plus Odeon membership.</strong></p>
-                    <p>Lenard goes to the movies 3 / 4 times a month. When going to the cinema, he only goes to Odeon and has the My Limitless Plus membership. He usually alternates between 5 Odeon locations, all around the city centre. When booking a ticket, Lenard uses the app rather than the website. He uses it only when he wants to book tickets. Since he has been using the app for a long time, he says he's already familiar with its functionality. However, since he likes attending different cinema locations, he said it would be useful to have a <strong>map view of the cinemas</strong>, and not only a list in a dropdown menu. Also, <strong>cancelling or pausing the membership is very difficult</strong>. He says that the current way of <strong>booking tickets is relatively easy</strong>.</p>
+                    <div class="user-interview-text">
+                        <p><strong>Lenard, 35, My Limitless Plus Odeon membership.</strong></p>
+                        <p>Lenard goes to the movies 3 / 4 times a month. When going to the cinema, he only goes to Odeon and has the My Limitless Plus membership. He usually alternates between 5 Odeon locations, all around the city centre. When booking a ticket, Lenard uses the app rather than the website. He uses it only when he wants to book tickets. Since he has been using the app for a long time, he says he's already familiar with its functionality. However, since he likes attending different cinema locations, he said it would be useful to have a <strong>map view of the cinemas</strong>, and not only a list in a dropdown menu. Also, <strong>cancelling or pausing the membership is very difficult</strong>. He says that the current way of <strong>booking tickets is relatively easy</strong>.</p>
+                    </div>
                 </div>
                 <div class="user-interview">
                     <img class="user-image" src="../resources/odeon/ili.svg" alt="Ili profile picture">
-                    <p><strong>Ili, 26, User of the competition.</strong></p>
-                    <p>Ili goes to the cinema once every few months and she doesn't have any cinema membership. She usually goes to Vue (Odeon's competition), or to a local cinema in her neighbourhood. She often tries different locations and chooses it according to the hour that works best for her. When booking a ticket she usually does it through the website. The most important tasks she wishes to perform when using a cinema app are <strong>booking a ticket</strong> and <strong>accessing her ticket</strong>.</p>
+                    <div class="user-interview-text">
+                        <p><strong>Ili, 26, User of the competition.</strong></p>
+                        <p>Ili goes to the cinema once every few months and she doesn't have any cinema membership. She usually goes to Vue (Odeon's competition), or to a local cinema in her neighbourhood. She often tries different locations and chooses it according to the hour that works best for her. When booking a ticket she usually does it through the website. The most important tasks she wishes to perform when using a cinema app are <strong>booking a ticket</strong> and <strong>accessing her ticket</strong>.</p>
+                    </div>
                 </div>
                 <div class="user-interview">
                     <img class="user-image" src="../resources/odeon/edoardo.svg" alt="Edoardo profile picture">
-                    <p><strong>Edoardo, 29, Occasional Odeon user.</strong></p>
-                    <p>Edoardo attends the movies once every two months, and when he does, he exclusively chooses Odeon. He consistently goes to the same cinema location, situated near his home, and he values that the app saves it as his favourite location. When booking a ticket, Edoardo opts for the app instead of the website. He not only uses it for ticket reservations but also for simply <strong>checking which movies are currently playing</strong>. Edoardo expresses a desire for <strong>easier access to his purchased tickets</strong>, suggesting features such as exporting them to his Apple Wallet or having them readily available on the Home page. Additionally, he finds pre-ordering a movie several weeks in advance less straightforward. Reflecting on his initial experience with the app, he mentions a challenge in understanding that he had to tap the film screening time for booking a ticket. However, he emphasises that the overall ticket <strong>booking process is generally fast</strong>.</p>
+                    <div class="user-interview-text">
+                        <p><strong>Edoardo, 29, Occasional Odeon user.</strong></p>
+                        <p>Edoardo attends the movies once every two months, and when he does, he exclusively chooses Odeon. He consistently goes to the same cinema location, situated near his home, and he values that the app saves it as his favourite location. When booking a ticket, Edoardo opts for the app instead of the website. He not only uses it for ticket reservations but also for simply <strong>checking which movies are currently playing</strong>. Edoardo expresses a desire for <strong>easier access to his purchased tickets</strong>, suggesting features such as exporting them to his Apple Wallet or having them readily available on the Home page. Additionally, he finds pre-ordering a movie several weeks in advance less straightforward. Reflecting on his initial experience with the app, he mentions a challenge in understanding that he had to tap the film screening time for booking a ticket. However, he emphasises that the overall ticket <strong>booking process is generally fast</strong>.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -186,7 +204,7 @@
             </div>
             <img class="image" src="../resources/odeon/vue-user-flow.jpeg" alt="Vue user flow">
             <img class="image" src="../resources/odeon/ticket-master-user-flow.jpeg" alt="Ticket Master user flow">
-            <p>Some things I've learned</p>
+            <p>Some things I've learned:</p>
             <ol>
                 <li>
                     <p><strong>Tab Bar Navigation</strong></p>
@@ -232,6 +250,7 @@
 
         <div class="section-project">
             <h3>Solutions</h3>
+            <div class="section-solutions">
                 <div class="solutions-numbers-container">
                     <span class="solutions-numbers-text">1</span>
                     <div class="solutions-container solutions-odeon">
@@ -281,6 +300,7 @@
                         <p>Retaining and improving key aspects such as the brand's general appearance, user interface, fast booking process, and straightforward access to food and drinks.</p>
                     </div>
                 </div>
+            </div>
         </div>
 
         <hr>
@@ -294,7 +314,8 @@
 
         <div class="section-project">
             <h3>Style-guide</h3>
-            <img class="image-preview image-style-guide" src="../resources/odeon/style-guide.jpg" alt="Odeon style-guide">
+            <img class="image-preview image-style-guide-small" src="../resources/odeon/style-guide.jpg" alt="Odeon style-guide">
+            <img class="image-preview image-style-guide-big" src="../resources/odeon/style-guide-big.jpg" alt="Odeon style-guide">
         </div>
 
         <hr>
@@ -302,23 +323,23 @@
         <div class="section-project final-design-container">
             <h3>Final Design</h3>
             <div class="final-design-phone">
-                <img src="../resources/odeon/final-design/home.svg" alt="Final desing home">
+                <video controls autoplay muted loop src="../resources/odeon/videos/home.mp4">Your browser does not support the video tag.</video>
                 <p>Explore existing and upcoming films from a variety of cinemas.</p>
             </div>
             <div class="final-design-phone">
-                <img src="../resources/odeon/final-design/myodeon.svg" alt="Final desing myodeon">
+                <video controls autoplay muted loop src="../resources/odeon/videos/myodeon.mp4">Your browser does not support the video tag.</video>
                 <p>Fast and highlighted access to your account and to your purchased tickets.</p>
             </div>
             <div class="final-design-phone">
-                <img src="../resources/odeon/final-design/food.svg" alt="Final desing food">
+                <video controls autoplay muted loop src="../resources/odeon/videos/food.mp4">Your browser does not support the video tag.</video>
                 <p>Food & drinks can easily be ordered at any cinema.</p>
             </div>
             <div class="final-design-phone">
-                <img src="../resources/odeon/final-design/book.svg" alt="Final desing book">
+                <video controls autoplay muted loop src="../resources/odeon/videos/book.mp4">Your browser does not support the video tag.</video>
                 <p>Quickly booking your cinema tickets, from any page and at any moment.</p>
             </div>
             <div class="final-design-phone">
-                <img src="../resources/odeon/final-design/paywall.svg" alt="Final desing paywall">
+                <video controls autoplay muted loop src="../resources/odeon/videos/paywall.mp4">Your browser does not support the video tag.</video>
                 <p>Paywall that will encourage and expose more users to different membership possibilities.</p>
             </div>
         </div>
@@ -341,12 +362,12 @@
         <div class="button-container">
             <div class="previous-next-project">
                 <a class="button-more" href="../projects/photo-editor.html">
-                    <img class="arrow-forward arrow-previous" src="../resources/arrow-forward.svg" alt="arrow forward"/>
+                    <img class="arrow-forward" src="../resources/arrow-left-white.svg" alt="arrow left"/>
                     <span>Previous project</span>
                 </a>
                 <a class="button-more" href="../projects/growit.html">
                     <span>Next project</span>
-                    <img class="arrow-forward" src="../resources/arrow-forward.svg" alt="arrow forward"/>
+                    <img class="arrow-forward" src="../resources/arrow-right-white.svg" alt="arrow right"/>
                 </a>
             </div>
             

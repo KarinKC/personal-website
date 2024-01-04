@@ -5,7 +5,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="../styles.css">
     <meta name="theme-color" content="white"/>
-    <meta name='viewport'content='width=device-width, initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover'/>
+    <meta name='viewport'content='width=device-width, initial-scale=1.0, maximum-scale=1.0'/>
     <script src="../code.js"></script>
 </head>
 
@@ -31,11 +31,13 @@
         <div class="nav-overlay expandable" onclick="onNavContainerClick()"></div>
     </header>
 
-    <main class="page">
-
+    <div class="page">
         <div class="project-preview">
             <div class="project-content">
-                <img class="phone" src="../resources/growit/main1.jpg" alt="Main GrowIt screen"/>
+                <div class="carousel">
+                    <img class="phone" src="../resources/growit/main1.jpg" alt="main Growit screen"/>
+                    <img class="phone" src="../resources/growit/main2.jpg" alt="main Growit screen"/>
+                </div>
                 <div class="carousel-buttons">
                     <img src="../resources/circle-empty.svg" alt="Empty circle">
                     <img src="../resources/circle-full.svg" alt="Full circle">
@@ -53,7 +55,16 @@
                 </div>
             </div>
         </div>
+    </div>    
+
+    <hr class="hero-divider">
+
+    <div class="arrow-down">
+        <img class="arrow-down-design" src="../resources/arrow-down.svg" alt="arrow-down">
+    </div>
             
+    <main class="page page-projects">
+
         <div class="section-project">
             <h3>Context</h3>
             <p>We tend to spend more and more time indoors with each passing year. Covid-19 has accelerated this trend, as the concept of remote work has become increasingly available and accepted.</p>
@@ -69,12 +80,14 @@
                 <p class="highlight">boost productivity</p>
                 <p class="highlight">improve the quality of indoor air</p>
             </div>
-            <div class="caption">
-                *Based on the following studies:
-                <a class="caption-link" href="https://meridian.allenpress.com/jeh/article/14/2/97/79431/Interior-Plants-May-Improve-Worker-Productivity">1</a>,
-                <a class="caption-link" href="https://journals.ashs.org/hortsci/view/journals/hortsci/42/3/article-p581.xml">2</a>,
-                <a class="caption-link" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3230460/">3</a>,
-                <a class="caption-link" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8454400/">4</a>
+            <div class="notes">
+                <div class="caption">
+                    *Based on the following studies:
+                    <a class="caption-link" href="https://meridian.allenpress.com/jeh/article/14/2/97/79431/Interior-Plants-May-Improve-Worker-Productivity">1</a>,
+                    <a class="caption-link" href="https://journals.ashs.org/hortsci/view/journals/hortsci/42/3/article-p581.xml">2</a>,
+                    <a class="caption-link" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3230460/">3</a>,
+                    <a class="caption-link" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8454400/">4</a>
+                </div>
             </div>
         </div>
 
@@ -113,28 +126,30 @@
 
         <div class="section-project">
             <h3>Solutions</h3>
-            <div class="solutions-numbers-container">
-                <span class="solutions-numbers-text">1</span>
-                <div class="solutions-container solutions-growit">
-                    <p>Search by name or scan a plant to identify it and easily access info, care tips, and recognise diseases.</p>
+            <div class="section-solutions">
+                <div class="solutions-numbers-container">
+                    <span class="solutions-numbers-text">1</span>
+                    <div class="solutions-container solutions-growit">
+                        <p>Search by name or scan a plant to identify it and easily access info, care tips, and recognise diseases.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="solutions-numbers-container">
-                <span class="solutions-numbers-text">2</span>
-                <div class="solutions-container solutions-growit">
-                    <p>Organised 'My Garden' section to easily view all plants.</p>
+                <div class="solutions-numbers-container">
+                    <span class="solutions-numbers-text">2</span>
+                    <div class="solutions-container solutions-growit">
+                        <p>Organised 'My Garden' section to easily view all plants.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="solutions-numbers-container">
-                <span class="solutions-numbers-text">3</span>
-                <div class="solutions-container solutions-growit">
-                    <p>Plant care reminders.</p>
+                <div class="solutions-numbers-container">
+                    <span class="solutions-numbers-text">3</span>
+                    <div class="solutions-container solutions-growit">
+                        <p>Plant care reminders.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="solutions-numbers-container">
-                <span class="solutions-numbers-text">4</span>
-                <div class="solutions-container solutions-growit">
-                    <p>Garden expert chat.</p>
+                <div class="solutions-numbers-container">
+                    <span class="solutions-numbers-text">4</span>
+                    <div class="solutions-container solutions-growit">
+                        <p>Garden expert chat.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -150,14 +165,15 @@
 
         <div class="section-project">
             <h3>Wireframes &amp; Wireflows</h3>
-            <img class="image" src="../resources/growit/wireframes.svg" alt="Wireframes">
+            <img class="image" src="../resources/growit/wireframes.jpg" alt="Wireframes">
         </div>
 
         <hr>
 
         <div class="section-project">
             <h3>Style-guide</h3>
-            <img class="image-preview image-style-guide" src="../resources/growit/style-guide.jpg" alt="Growit style-guide">
+            <img class="image-preview image-style-guide-small" src="../resources/growit/style-guide.jpg" alt="Growit style-guide">
+            <img class="image-preview image-style-guide-big" src="../resources/growit/style-guide-big.jpg" alt="Growit style-guide">
         </div>
 
         <hr>
@@ -166,40 +182,49 @@
             <h3>User Testing</h3>
             <p>An observation of the natural interaction of users with the app, followed by an interview, allowed me to identify several points of improvement. The following are the major pain points and the changes I implemented accordingly:</p>
             <ul>
-                <li>In MyGarden it is not clear where I can add a plant / a space → Moved the + icon to the top of the screen.</li>
+                <li>
+                    <p>In MyGarden it is not clear where I can add a plant / a space</p>
+                    <p>→ Moved the + icon to the top of the screen.</p>
+                </li>
             </ul>
             <div class="iteration iteration-growit">
-                <img src="../resources/growit/mygarden-before.svg" alt="MyGarden Before">
+                <img class="scroll-picture-display" src="../resources/growit/mygarden-before.svg" alt="MyGarden Before">
                 <svg class="arrow-iteration-growit" width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M12.175 9.5968H0V7.5968H12.175L6.575 1.9968L8 0.596802L16 8.5968L8 16.5968L6.575 15.1968L12.175 9.5968Z"/>
                     <path d="M12.175 9.5968H0V7.5968H12.175L6.575 1.9968L8 0.596802L16 8.5968L8 16.5968L6.575 15.1968L12.175 9.5968Z"/>
                     <path d="M12.175 9.5968H0V7.5968H12.175L6.575 1.9968L8 0.596802L16 8.5968L8 16.5968L6.575 15.1968L12.175 9.5968Z"/>
                 </svg>
-                <img src="../resources/growit/mygarden-after.svg" alt="MyGarden After">
+                <img class="scroll-picture-display" src="../resources/growit/mygarden-after.svg" alt="MyGarden After">
             </div>
             <ul>
-                <li>Scan for diagnosis is annoying if you have to navigate back for starting over → Changed it to a modal that the user can easily navigate or close.</li>
+                <li>
+                    <p>Scan for diagnosis is annoying if you have to navigate back for starting over</p>
+                    <p>→ Changed it to a modal that the user can easily navigate or close.</p>
+                </li>
             </ul>
             <div class="iteration iteration-growit">
-                <img class="image-preview" src="../resources/growit/scan-before.svg" alt="Scan Before">
+                <img class="scroll-picture-display" src="../resources/growit/scan-before.svg" alt="Scan Before">
                 <svg class="arrow-iteration-growit" width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M12.175 9.5968H0V7.5968H12.175L6.575 1.9968L8 0.596802L16 8.5968L8 16.5968L6.575 15.1968L12.175 9.5968Z"/>
                     <path d="M12.175 9.5968H0V7.5968H12.175L6.575 1.9968L8 0.596802L16 8.5968L8 16.5968L6.575 15.1968L12.175 9.5968Z"/>
                     <path d="M12.175 9.5968H0V7.5968H12.175L6.575 1.9968L8 0.596802L16 8.5968L8 16.5968L6.575 15.1968L12.175 9.5968Z"/>
                 </svg>
-                <img class="image-preview" src="../resources/growit/scan-after.svg" alt="Scan After">
+                <img class="scroll-picture-display" src="../resources/growit/scan-after.svg" alt="Scan After">
             </div>      
             <ul>
-                <li>Care reminders don't have a clear enough separation between the activities (such as water and fertilise) → Created a more clear UI.</li>
+                <li>
+                    <p>Care reminders don't have a clear enough separation between the activities (such as water and fertilise)</p>
+                    <p>→ Created a more clear UI.</p>
+                </li>
             </ul>     
             <div class="iteration iteration-growit">
-                <img class="image-preview" src="../resources/growit/care-before.svg" alt="Care reminders Before">
+                <img class="scroll-picture-display" src="../resources/growit/care-before.svg" alt="Care reminders Before">
                 <svg class="arrow-iteration-growit" width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M12.175 9.5968H0V7.5968H12.175L6.575 1.9968L8 0.596802L16 8.5968L8 16.5968L6.575 15.1968L12.175 9.5968Z"/>
                     <path d="M12.175 9.5968H0V7.5968H12.175L6.575 1.9968L8 0.596802L16 8.5968L8 16.5968L6.575 15.1968L12.175 9.5968Z"/>
                     <path d="M12.175 9.5968H0V7.5968H12.175L6.575 1.9968L8 0.596802L16 8.5968L8 16.5968L6.575 15.1968L12.175 9.5968Z"/>
                 </svg>
-                <img class="image-preview" src="../resources/growit/care-after.svg" alt="Care reminders After">
+                <img class="scroll-picture-display" src="../resources/growit/care-after.svg" alt="Care reminders After">
             </div>
         </div>
 
@@ -208,19 +233,19 @@
         <div class="section-project final-design-container">
             <h3>Final Design</h3>
             <div class="final-design-phone">
-                <img src="../resources/growit/final-design/home.svg" alt="Final desing home">
+                <video controls autoplay muted loop src="../resources/growit/Videos/home.mp4">Your browser does not support the video tag.</video>
                 <p>Home tab includes an easy access to Search, Care Reminders, and discovery articles.</p>
             </div>
             <div class="final-design-phone">
-                <img src="../resources/growit/final-design/mygarden.svg" alt="Final desing MyGarden">
+                <video controls autoplay muted loop src="../resources/growit/Videos/mygarden.mp4">Your browser does not support the video tag.</video>
                 <p>MyGarden enables you to organise your plants in personalised spaces and easily keep track of their care and growth.</p>
             </div>
             <div class="final-design-phone">
-                <img src="../resources/growit/final-design/scan.svg" alt="Final desing scan">
+                <video controls autoplay muted loop src="../resources/growit/Videos/scan.mp4">Your browser does not support the video tag.</video>
                 <p>Scan features allows you to quickly identify a plant and learn more about it.</p>
             </div>
             <div class="final-design-phone">
-                <img src="../resources/growit/final-design/growexpert.svg" alt="Final desing Grow Expert">
+                <video controls autoplay muted loop src="../resources/growit/Videos/growexpert.mp4">Your browser does not support the video tag.</video>
                 <p>A chat with a Grow Expert will help you figure out what's wrong with your plant and set up a treatment plan.</p>
             </div>
         </div>
@@ -248,12 +273,12 @@
         <div class="button-container">
             <div class="previous-next-project">
                 <a class="button-more" href="../projects/odeon-redesign.html">
-                    <img class="arrow-forward arrow-previous" src="../resources/arrow-forward.svg" alt="arrow forward"/>
+                    <img class="arrow-forward" src="../resources/arrow-left-white.svg" alt="arrow left"/>
                     <span>Previous project</span>
                 </a>
                 <a class="button-more" href="../projects/photo-editor.html">
                     <span>Next project</span>
-                    <img class="arrow-forward" src="../resources/arrow-forward.svg" alt="arrow forward"/>
+                    <img class="arrow-forward" src="../resources/arrow-right-white.svg" alt="arrow right"/>
                 </a>
             </div>
             

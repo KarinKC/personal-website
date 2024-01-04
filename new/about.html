@@ -5,7 +5,7 @@
     <title>Karin Kay Portfolio</title>
     <link rel='stylesheet' href='styles.css'/>
     <meta name="theme-color" content="white"/>
-    <meta name='viewport'content='width=device-width, initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover'/>
+    <meta name='viewport'content='width=device-width, initial-scale=1.0, maximum-scale=1.0'/>
     <script src="code.js"></script>
 </head>
 
@@ -30,56 +30,76 @@
         </nav>
         <div class="nav-overlay expandable" onclick="onNavContainerClick()"></div>
     </header>
-
-    <main class="page">
-       
-        <section class="section-secondary">
+    
+    <div class="page">
+        <section class="hero-container">
             <div class="profile-top">
                 <img class="profile-picture" src="resources/karin2.jpg" alt="Profile picture"/>
             </div>
-            <h1>About.</h1>
-            <p>Every project is <strong>unique</strong>. In my designs I aim to understand the essence of the specific  problem, and propose a solution with a strong <strong>concept</strong>, that drives the best <strong>user experience</strong>.
-                My architectural background had taught me to look at every design project from an <strong>architectural point of view</strong>, applied on the digital world. I believe architecture and design share many similarities - both wish to create <strong>beautiful products</strong>, that are <strong>functional</strong> and <strong>aesthetic</strong>.  
-            </p>
-            <div class="buttons-together">
-                <a class="button button-small" href="resources/karinkc-cv.pdf" download target="_blank">Download CV</a>
-                <a class="button button-small button-secondary" href="contact.html">Get in touch</a>
+            <div class="about-hero-content">
+                <h1>About.</h1>
+                <p>Every project is <strong>unique</strong>. In my designs I aim to understand the essence of the specific  problem, and propose a solution with a strong <strong>concept</strong>, that drives the best <strong>user experience</strong>.
+                    My architectural background had taught me to look at every design project from an <strong>architectural point of view</strong>, applied on the digital world. I believe architecture and design share many similarities - both wish to create <strong>beautiful products</strong>, that are <strong>functional</strong> and <strong>aesthetic</strong>.  
+                </p>
+                <div class="buttons-together">
+                    <a class="button button-small" href="resources/karinkc-cv.pdf" download target="_blank">Download CV</a>
+                    <a class="button button-small button-secondary" href="contact.html">Get in touch</a>
+                </div>
             </div>
         </section>
+    </div>
 
-        <hr>
+    <hr class="hero-divider">
+
+    <div class="arrow-down">
+        <img class="arrow-down-design" src="resources/arrow-down.svg" alt="arrow-down">
+    </div>
+
+    <main class="page page-projects">
 
         <div class="section-secondary">
             <h2>Work Experience</h2>
-            <div>
+            <div class="about-container">
                 <p class="about-date">Sep 2023 - Present</p>
-                <p class="about-title">Freelancer Product Designer</p>
-                <p class="about-description">UX and UI design for mobile applications.</p>
+                <div>
+                    <p class="about-title">Freelancer Product Designer</p>
+                    <p class="about-description">UX and UI design for mobile applications.</p>
+                </div>
             </div>
-            <div>
+            <div class="about-container">
                 <p class="about-date">Oct 2022 - Sep 2023</p>
-                <p class="about-title">Due Diligence Agent at <a href="https://wise.com" target="_blank">Wise</a></p>
-                <p class="about-description">Performing customer due diligence and designing an internal verification tool for a new upcoming product launch.</p>
+                <div>
+                    <p class="about-title">Due Diligence Agent at <a href="https://wise.com" target="_blank">Wise</a></p>
+                    <p class="about-description">Performing customer due diligence and designing an internal verification tool for a new upcoming product launch.</p>
+                </div>
             </div>
-            <div>
+            <div class="about-container">
                 <p class="about-date">Apr 2021 - Jun 2021</p>
-                <p class="about-title">Architectural Designer at <a href="http://www.fuzzatelier.com" target="_blank">Fuzz Atelier</a></p>
-                <p class="about-description">Detailing and finalisation of public architectural projects.</p>
+                <div>
+                    <p class="about-title">Architectural Designer at <a href="http://www.fuzzatelier.com" target="_blank">Fuzz Atelier</a></p>
+                    <p class="about-description">Detailing and finalisation of public architectural projects.</p>
+                </div>
             </div>
-            <div>
+            <div class="about-container">
                 <p class="about-date">Feb 2019 - Apr 2019</p>
-                <p class="about-title">Architectural Designer at <a href="https://www.aarch-mi.com" target="_blank">AARCH-MI</a></p>
-                <p class="about-description">Team collaboration in competitions involving urban design.</p>
+                <div>
+                    <p class="about-title">Architectural Designer at <a href="https://www.aarch-mi.com" target="_blank">AARCH-MI</a></p>
+                    <p class="about-description">Team collaboration in competitions involving urban design.</p>
+                </div>
             </div>
-            <div>
+            <div class="about-container">
                 <p class="about-date">Apr 2015 - Nov 2016</p>
-                <p class="about-title">Smart Center</p>
-                <p class="about-description">Teacher and tutor. Providing lessons for children of all ages in a variety of subjects, both individually and in groups.</p>
+                <div>
+                    <p class="about-title">Smart Center</p>
+                    <p class="about-description">Teacher and tutor. Providing lessons for children of all ages in a variety of subjects, both individually and in groups.</p>
+                </div>
             </div>
-            <div>
+            <div class="about-container">
                 <p class="about-date">Mar 2013 - Mar 2015</p>
-                <p class="about-title">Israel Defence Forces (IDF) | Home Front Command </p>
-                <p class="about-description">Operation sergeant in a war room, in charge of the alarm system of the country. The task required collaborative team work under a daily pressure and communication with high-ranked commanders. Received an acknowledgement of excellence and a campaign medal awarded for my participation in Operation Protective Edge (Miv'tza Tzuk Eitan).</p>
+                <div>
+                    <p class="about-title">Israel Defence Forces (IDF) | Home Front Command </p>
+                    <p class="about-description">Operation sergeant in a war room, in charge of the alarm system of the country. The task required collaborative team work under a daily pressure and communication with high-ranked commanders. Received an acknowledgement of excellence and a campaign medal awarded for my participation in Operation Protective Edge (Miv'tza Tzuk Eitan).</p>
+                </div>
             </div>
         </div>
         
@@ -87,35 +107,47 @@
 
         <div class="section-secondary">
             <h2>Education</h2>
-            <div>
+            <div class="about-container">
                 <p class="about-date">Sep 2019 - Dec 2022</p>
-                <p class="about-title">MSc. in Architecture for Sustainability | Politecnico di Torino</p>
-                <p class="about-description">Grade: 110 / 110 cum laude</p>
+                <div>
+                    <p class="about-title">MSc. in Architecture for Sustainability | Politecnico di Torino</p>
+                    <p class="about-description">Grade: 110 / 110 cum laude</p>
+                </div>
             </div>
-            <div>
+            <div class="about-container">
                 <p class="about-date">Sep 2019 - Feb 2022</p>
-                <p class="about-title">Alta Scuola Politecnica</p>
-                <p class="about-description">A multidisciplinary joint school of Politecnico di Milano and Politecnico di Torino. Students are selected on the basis of merit. Project: <a href="https://www.asp-poli.it/mars-exos/" target="_blank">Mars-Exos Virtual Reality for Astronauts Training</a>.</p>
+               <div>
+                    <p class="about-title">Alta Scuola Politecnica</p>
+                    <p class="about-description">A multidisciplinary joint school of Politecnico di Milano and Politecnico di Torino. Students are selected on the basis of merit. Project: <a href="https://www.asp-poli.it/mars-exos/" target="_blank">Mars-Exos Virtual Reality for Astronauts Training</a>.</p>
+               </div>
             </div>
-            <div>
+            <div class="about-container">
                 <p class="about-date">Sep 2019 - Oct 2021</p>
-                <p class="about-title">MSc. in Architecture - Built Environment - Interiors | Politecnico di Milano</p>
-                <p class="about-description">Grade: 110 / 110 cum laude</p>
+               <div>
+                    <p class="about-title">MSc. in Architecture - Built Environment - Interiors | Politecnico di Milano</p>
+                    <p class="about-description">Grade: 110 / 110 cum laude</p>
+               </div>
             </div>
-            <div>
+            <div class="about-container">
                 <p class="about-date">Aug 2018 - Feb 2019</p>
-                <p class="about-title">KEA - Copenhagen School of Design &amp; Technology</p>
-                <p class="about-description">Exchange student for one semester.</p>
+                <div>
+                    <p class="about-title">KEA - Copenhagen School of Design &amp; Technology</p>
+                    <p class="about-description">Exchange student for one semester.</p>
+                </div>
             </div>
-            <div>
+            <div class="about-container">
                 <p class="about-date">Oct 2016 - Jul 2019</p>
-                <p class="about-title">BSc. in Architectural Design | Politecnico di Milano</p>
-                <p class="about-description">Grade: 110 / 110 cum laude</p>
+                <div>
+                    <p class="about-title">BSc. in Architectural Design | Politecnico di Milano</p>
+                    <p class="about-description">Grade: 110 / 110 cum laude</p>
+                </div>
             </div>
-            <div>
+            <div class="about-container">
                 <p class="about-date">Sep 2009 - Jul 2012</p>
-                <p class="about-title">Yigal Alon High School, Israel</p>
-                <p class="about-description">Majored in Visual Arts, Psychology and Mathematics. Graduated with honours, at the top of my class.</p>
+                <div>
+                    <p class="about-title">Yigal Alon High School, Israel</p>
+                    <p class="about-description">Majored in Visual Arts, Psychology and Mathematics. Graduated with honours, at the top of my class.</p>
+                </div>
             </div>
         </div>
 
@@ -123,17 +155,22 @@
 
         <div class="section-secondary">
             <h2>Extracurricular Activities</h2>
-            <div>
+            <div class="about-container">
                 <p class="about-date">May 2019 - May 2021</p>
-                <p class="about-description"><strong>Student representative</strong> elected for the school council at Politecnico di Milano. [<a href="https://www.youtube.com/watch?v=NYOKK-QzJMo&t=29s" target="_blank">Interview for a promotion video</a>]</p>
-            </div>
-            <div>
+                <div>
+                    <p class="about-description"><strong>Student representative</strong> elected for the school council at Politecnico di Milano. [<a href="https://www.youtube.com/watch?v=NYOKK-QzJMo&t=29s" target="_blank">Interview for a promotion video</a>]</p>
+                </div>            </div>
+            <div class="about-container">
                 <p class="about-date">Nov 2020</p>
-                <p class="about-description"><strong>Set Design for</strong> <a href="https://filmfreeway.com/SmudgeAnimation"><strong>'Smudge'</strong></a>. A short film directed by Dor Samara. Produced by The Steve Tisch School of Film and Television.</p>
+                <div>
+                    <p class="about-description"><strong>Set Design for</strong> <a href="https://filmfreeway.com/SmudgeAnimation"><strong>'Smudge'</strong></a>. A short film directed by Dor Samara. Produced by The Steve Tisch School of Film and Television.</p>
+                </div>
             </div>
-            <div>
+            <div class="about-container">
                 <p class="about-date">Oct 2018</p>
-                <p class="about-description"><a href="https://global.kea.dk/activities/charrette/kea-charrette-2018/group-9-greenhouse" target="_blank"><strong>KEA International Charrette</strong></a> Collaborative development of innovative solutions around the theme of “Connecting Communities - Inclusive Design in the Copenhagen Nordvest District”. <a href="https://youtu.be/t2WcaM1rRS8?si=J4BF566HCmSLGC0Y" target="_blank">Presentation to stakeholders</a></p>
+                <div>
+                    <p class="about-description"><a href="https://global.kea.dk/activities/charrette/kea-charrette-2018/group-9-greenhouse" target="_blank"><strong>KEA International Charrette</strong></a> Collaborative development of innovative solutions around the theme of “Connecting Communities - Inclusive Design in the Copenhagen Nordvest District”. <a href="https://youtu.be/t2WcaM1rRS8?si=J4BF566HCmSLGC0Y" target="_blank">Presentation to stakeholders</a></p>
+                </div>
             </div>
         </div>
 
@@ -143,7 +180,7 @@
             <h2>Skills</h2>
             <table>
                 <tr>
-                    <td><p><strong>Photoshop</strong></p></td>
+                    <td><p class="skills-title"><strong>Photoshop</strong></p></td>
                     <td class="skills-square"></td>
                     <td class="skills-square"></td>
                     <td class="skills-square"></td>
@@ -153,7 +190,7 @@
                     <td class="skills-square empty"></td>
                 </tr>
                 <tr>
-                    <td><p><strong>Indesign</strong></p></td>
+                    <td><p class="skills-title"><strong>Indesign</strong></p></td>
                     <td class="skills-square"></td>
                     <td class="skills-square"></td>
                     <td class="skills-square"></td>
@@ -163,7 +200,7 @@
                     <td class="skills-square empty"></td>
                 </tr>
                 <tr>
-                    <td><p><strong>Illustrator</strong></p></td>
+                    <td><p class="skills-title"><strong>Illustrator</strong></p></td>
                     <td class="skills-square"></td>
                     <td class="skills-square"></td>
                     <td class="skills-square"></td>
@@ -173,7 +210,7 @@
                     <td class="skills-square empty"></td>
                 </tr>
                 <tr>
-                    <td><p><strong>Figma</strong></p></td>
+                    <td><p class="skills-title"><strong>Figma</strong></p></td>
                     <td class="skills-square"></td>
                     <td class="skills-square"></td>
                     <td class="skills-square"></td>
@@ -183,7 +220,7 @@
                     <td class="skills-square empty"></td>
                 </tr>
                 <tr>
-                    <td><p><strong>Office Suite</strong></p></td>
+                    <td><p class="skills-title"><strong>Office Suite</strong></p></td>
                     <td class="skills-square"></td>
                     <td class="skills-square"></td>
                     <td class="skills-square"></td>
@@ -193,7 +230,7 @@
                     <td class="skills-square empty"></td>
                 </tr>
                 <tr>
-                    <td><p><strong>Revit</strong></p></td>
+                    <td><p class="skills-title"><strong>Revit</strong></p></td>
                     <td class="skills-square"></td>
                     <td class="skills-square"></td>
                     <td class="skills-square"></td>
@@ -203,7 +240,7 @@
                     <td class="skills-square empty"></td>
                 </tr>
                 <tr>
-                    <td><p><strong>Archicad</strong></p></td>
+                    <td><p class="skills-title"><strong>Archicad</strong></p></td>
                     <td class="skills-square"></td>
                     <td class="skills-square"></td>
                     <td class="skills-square"></td>
@@ -213,7 +250,7 @@
                     <td class="skills-square empty"></td>
                 </tr>
                 <tr>
-                    <td><p><strong>Sketchup</strong></p></td>
+                    <td><p class="skills-title"><strong>Sketchup</strong></p></td>
                     <td class="skills-square"></td>
                     <td class="skills-square"></td>
                     <td class="skills-square"></td>
@@ -223,7 +260,7 @@
                     <td class="skills-square empty"></td>
                 </tr>
                 <tr>
-                    <td><p><strong>Blender</strong></p></td>
+                    <td><p class="skills-title"><strong>Blender</strong></p></td>
                     <td class="skills-square"></td>
                     <td class="skills-square"></td>
                     <td class="skills-square"></td>
@@ -233,7 +270,7 @@
                     <td class="skills-square empty"></td>
                 </tr>
                 <tr>
-                    <td><p><strong>Autocad</strong></p></td>
+                    <td><p class="skills-title"><strong>Autocad</strong></p></td>
                     <td class="skills-square"></td>
                     <td class="skills-square"></td>
                     <td class="skills-square"></td>
@@ -243,7 +280,7 @@
                     <td class="skills-square empty"></td>
                 </tr>
                 <tr>
-                    <td><p><strong>HTML</strong></p></td>
+                    <td><p class="skills-title"><strong>HTML</strong></p></td>
                     <td class="skills-square"></td>
                     <td class="skills-square"></td>
                     <td class="skills-square"></td>
@@ -253,7 +290,7 @@
                     <td class="skills-square empty"></td>
                 </tr>
                 <tr>
-                    <td><p><strong>CSS</strong></p></td>
+                    <td><p class="skills-title"><strong>CSS</strong></p></td>
                     <td class="skills-square"></td>
                     <td class="skills-square"></td>
                     <td class="skills-square"></td>
