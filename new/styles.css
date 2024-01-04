@@ -778,16 +778,7 @@ p > a{
   display: flex;
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
-  width: 13.5rem;
-}
-
-.carousel > a {
-  display: flex;
-  flex-shrink: 0;
-  width: 100%;
-  height: 100%;
-  scroll-snap-align: start;
-  scroll-behavior: smooth;
+  width: 12.5rem;
 }
 
 .carousel-buttons {
@@ -816,6 +807,10 @@ p > a{
 .phone {
   width: 12.5rem;
   position: relative;
+  display: flex;
+  flex-shrink: 0;
+  scroll-snap-align: start;
+  scroll-behavior: smooth;
 }
 
 /* Desktop Styles */
@@ -846,15 +841,12 @@ p > a{
     gap: 1rem;
   }
 
-  .carousel > a {
-    width: fit-content;
-  }
-
   .carousel-buttons {
     display: none;
   }
 
   .phone {
+    width: fit-content;
     width: 18rem;
   }
 
