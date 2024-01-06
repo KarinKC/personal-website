@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, sans;
+  -webkit-tap-highlight-color: transparent; 
 }
 
 /* ---------- Layout ---------- */
@@ -99,6 +100,18 @@ body {
   gap: 1.5rem;
 }
 
+/* iPad Styles */
+@media only screen and (min-width: 650px) {
+
+  .page-projects {
+    max-width: 40rem;
+  }
+
+  .hero-container {
+    max-width: 40rem;
+  }
+}
+
 /* Desktop Styles */
 @media only screen and (min-width: 1000px) {
   body {
@@ -114,6 +127,7 @@ body {
 
   .page-projects {
     margin: 5.5rem 2rem 4rem 2rem;
+    max-width: 60rem;
   }
 
   .section {
@@ -151,6 +165,7 @@ body {
     align-items: center;
     justify-content: center;
     gap: 4rem;
+    max-width: none;
   }
 
   .section-secondary {
@@ -427,11 +442,6 @@ ol > li , ul > li {
 
 li {
   margin: 0.5rem 0;
-  padding-left: 0.25rem;
-}
-
-ul > li::marker {
-  font-size: 0.5rem;
 }
 
 .remove-list-bullet {
@@ -582,6 +592,11 @@ p > a{
   color: #151515;
 }
 
+.project-content > a {
+  text-decoration: none;
+  color: #151515;
+}
+
 .button {
   color: white;
   background: #2B3B40;
@@ -727,6 +742,16 @@ p > a{
   display: none;
 }
 
+/* iPad Styles */
+@media only screen and (min-width: 650px) {
+
+  .profile-picture {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 10rem;
+  }
+}
+
 /* Desktop Styles */
 @media only screen and (min-width: 1000px) {
  .hero {
@@ -758,7 +783,6 @@ p > a{
   flex-direction: column;
   align-items: center;
   gap: 1.5rem;
-  padding-bottom: 2.25rem;
 }
 
 .projects-page {
@@ -778,13 +802,14 @@ p > a{
   display: flex;
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
-  width: 12.5rem;
+  width: 14rem;
 }
 
 .carousel-buttons {
   display: flex;
   align-items: center;
   gap: 0.25rem;
+  margin-top: -0.5rem;
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
@@ -805,8 +830,7 @@ p > a{
 }
 
 .phone {
-  width: 12.5rem;
-  position: relative;
+  width: 14rem;
   display: flex;
   flex-shrink: 0;
   scroll-snap-align: start;
@@ -846,8 +870,7 @@ p > a{
   }
 
   .phone {
-    width: fit-content;
-    width: 18rem;
+    width: 18.5rem;
   }
 
 }
@@ -866,6 +889,13 @@ p > a{
   width: 100%;
 }
 
+/* iPad Styles */
+@media only screen and (min-width: 650px) {
+.image {
+  width: 80%;
+}
+}
+
 /* ---------- Contact ---------- */
 
 .contact {
@@ -876,20 +906,12 @@ p > a{
   gap: 0.25rem;
 }
 
-.contact:first-of-type {
-  margin-top: 2rem;
-}
-
 .contact > a {
   color: #151515;
 }
 
 /* Desktop Styles */
 @media only screen and (min-width: 1000px) {
-
-  .contact:first-of-type {
-    margin-top: auto;
-  }
 
   .contact {
     width: 15rem;
@@ -908,7 +930,7 @@ p > a{
 
 table {
   width: 100%;
-  max-width: 45rem;
+  max-width: 25rem;
   border-spacing: 0.25rem 0.25rem;
 }
 
@@ -923,6 +945,14 @@ td:first-of-type{
 
 .empty {
   background-color: #DBECF1;
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 1000px) {
+
+  .table {
+    max-width: 45rem;
+  }
 }
 
 /* ---------- Horizontal Scroll ---------- */
@@ -1023,6 +1053,9 @@ td:first-of-type{
   align-items:center;
   justify-content: center;
   gap: 0.5rem;
+}
+
+.logo-border {
   border: 0.05rem solid #BCB7A8;
   border-radius: 0.5rem;
 }
@@ -1037,6 +1070,9 @@ td:first-of-type{
   .competitors-logo {
     width: 4rem;
     height: 4rem;
+  }
+
+  .logo-border {
     border-radius: 1rem;
   }
 
@@ -1054,10 +1090,11 @@ td:first-of-type{
 
 .solutions-numbers-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
   width: 100%;
 }
 
@@ -1123,11 +1160,27 @@ td:first-of-type{
   max-width: max-content;
 }
 
-/* Desktop Styles */
-@media only screen and (min-width: 1000px) {
+/* Big Phone Styles */
+@media only screen and (min-width: 450px) {
+
+  .before-after-container {
+    flex-direction: row;
+  }
+}
+
+/* iPad Styles */
+@media only screen and (min-width: 650px) {
+
   .solutions-numbers-container{
+    flex-direction: row;
+    margin-bottom: 0;
     gap: 3rem;
   }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 1000px) {
+  
   .solutions-container {
     max-width: 43rem;
     min-height: 8.5rem;
@@ -1141,10 +1194,6 @@ td:first-of-type{
   .solutions-container {
     gap: 1rem;
   }
-  
-  .before-after-container {
-    flex-direction: row;
-  }
 }
 
 /* ---------- Style Guide ---------- */
@@ -1157,8 +1206,8 @@ td:first-of-type{
   display: none;
 }
 
-/* Desktop Styles */
-@media only screen and (min-width: 1000px) {
+/* iPad Styles */
+@media only screen and (min-width: 650px) {
   .image-style-guide-small {
     display: none;
   }
@@ -1202,8 +1251,8 @@ td:first-of-type{
   fill: #151515;
 }
 
-/* Desktop Styles */
-@media only screen and (min-width: 1000px) {
+/* iPad Styles */
+@media only screen and (min-width: 650px) {
 
   .iteration {
     flex-direction: row;
@@ -1263,11 +1312,23 @@ td:first-of-type{
   gap: 1rem;
 }
 
+.user-interview-title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 /* Desktop Styles */
 @media only screen and (min-width: 1000px) {
   .user-interview {
     flex-direction: row;
     gap: 3rem;
+  }
+
+  .user-interview-title {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
   }
 
   .user-image {
@@ -1301,25 +1362,31 @@ video {
   border-radius: 2.5rem;
 }
 
-/* Desktop Styles */
-@media only screen and (min-width: 1000px) {
+/* iPad Styles */
+@media only screen and (min-width: 650px) {
   .final-design-phone {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 1.5rem;
+    gap: 2.5rem;
     text-align: left;
   }
 
+  .final-design-container :nth-child(odd) {
+    flex-direction: row-reverse;
+  }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 1000px) {
   video {
     width: 20rem;
     height: 40.75rem;
     border-radius: 3.5rem;
   }
 
-  .final-design-container :nth-child(odd) {
-    flex-direction: row-reverse;
-    gap: 7.5rem;
+  .final-design-phone {
+    gap: 5rem;
   }
 }
 
