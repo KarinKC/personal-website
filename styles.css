@@ -195,6 +195,11 @@ html {
   html {
     font-size: 16px
   }
+
+  a,
+  a label {
+    cursor: pointer;
+  }
 }
 
 /* ---------- Navigation Menu ---------- */
@@ -1067,6 +1072,8 @@ td:first-of-type{
   align-items:center;
   justify-content: center;
   gap: 0.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
 }
 
 .logo-border {
@@ -1382,7 +1389,7 @@ video {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 2.5rem;
+    gap: 2rem;
     text-align: left;
   }
 
@@ -1400,7 +1407,7 @@ video {
   }
 
   .final-design-phone {
-    gap: 5rem;
+    gap: 2rem;
   }
 }
 
