@@ -1,35 +1,122 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/sf-pro-display">
-    <title>Karin K. C.</title>
+    <title>Karin Kay Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="theme-color" content="white"/>
+    <meta name='viewport'content='width=device-width, initial-scale=1.0, maximum-scale=1.0'/>
+    <script src="code.js"></script>
 </head>
-<body>
-    <div class="centering-container">
-        <div class="centered-container">
-            <div class="content">
-                <div class="profile-picture-container">
-                    <img src="resources/profile-picture.jpeg" alt="Profile picture">
+
+<body onload="onLoad()">
+
+    <header class="nav-container expandable">
+        <div class="nav-buttons expandable">
+            <a href="index.html">
+                <svg class="logo expandable" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3 0C1.34315 0 0 1.34315 0 3V37C0 38.6569 1.34315 40 3 40H37C38.6569 40 40 38.6569 40 37V3C40 1.34315 38.6569 0 37 0H3ZM12.6625 16.1738V4.8H10.4L10.4 35.9657H12.6625V24.6873L17.5899 36L19.3248 36L22.5244 36L27.4519 24.6873V35.9657H29.7143V4.80001L27.4519 4.80001V16.1738L22.5139 4.83693L20.8 4.83692L17.6004 4.83692L12.6625 16.1738ZM24.3906 24.2399L20.0572 34.2999L16.1686 25.2727C16.6571 25.6002 17.1922 25.8603 17.7604 26.0422C19.1516 26.4876 20.6543 26.4369 22.0124 25.8986C22.929 25.5353 23.7415 24.965 24.3906 24.2399ZM24.9479 22.9459L26.0314 20.4307L25.1797 18.4536L24.0831 18.768C23.7915 17.7506 23.1561 16.8658 22.2852 16.2644C21.4144 15.663 20.3619 15.3822 19.3072 15.4698C18.2525 15.5573 17.2608 16.0079 16.501 16.7447C15.7413 17.4815 15.2605 18.4589 15.1406 19.5105C15.0208 20.562 15.2692 21.6226 15.8436 22.5114C16.418 23.4003 17.2829 24.0626 18.2908 24.3853C19.2988 24.708 20.3874 24.6712 21.3713 24.2813C22.3552 23.8913 23.1734 23.1722 23.6866 22.2466L24.9479 22.9459ZM23.7919 15.2318L20.0572 6.56148L16.6383 14.4984C17.4115 14.0723 18.271 13.81 19.1632 13.736C20.6191 13.6151 22.0718 14.0027 23.2738 14.8329C23.454 14.9573 23.6269 15.0905 23.7919 15.2318Z"/>
+                </svg>
+            </a>  
+            <div class="hamburger-icon expandable" onclick="onHamburgerIconClick()"></div>   
+        </div>
+        <nav class="nav-list expandable">
+            <ul class="remove-list-bullet">
+                <li><a href="index.html">Home</a></li>
+                <li><a class="nav-not-current" href="projects.html">Projects</a></li>
+                <li><a class="nav-not-current" href="about.html">About</a></li>
+                <li><a class="nav-not-current" href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="nav-overlay expandable" onclick="onNavContainerClick()"></div>
+    </header>
+
+    <div class="page page-hero">
+        <section class="hero">
+            <p>Hi, I'm Karin Kay Cappello.</p>
+            <h1>I'm a UX/UI designer.</h1>
+            <p>I create intuitive <em>apps</em> and <em>web designs</em>. I believe that beautiful product design incorporates both <em>aesthetics</em> and <em>functionality</em>, just like architecture.</p>
+            <div class="buttons-together">
+                <a class="button button-small" href="contact.html">Get in touch</a>
+                <a class="button button-small button-secondary" href="projects.html">View projects</a>
+            </div>
+        </section>
+        <img class="profile-picture-home" src="resources/karin1.jpg" alt="Profile picture"/>
+    </div>
+
+    <hr class="hero-divider">
+
+    <div class="arrow-down">
+        <img class="arrow-down-design" src="resources/arrow-down.svg" alt="arrow-down">
+    </div>
+
+    <main class="page page-home-content">
+
+        <section class="section">
+            <div class="section-content">
+                <h2>This is a bit about me...</h2>
+                <ul class="remove-list-bullet">
+                    <li>🌍 &#160;I've lived in 4 countries</li>
+                    <li>🏛️ &#160;I have 3 degrees in architecture</li>
+                    <li>🎨 &#160;In high school I majored in Fine Arts</li>
+                    <li>✈️ &#160;I've visited 22 countries (I love travelling!)</li>
+                    <li>📖 &#160;Reading books is a favourite pastime of mine</li>
+                    <li>☘️ &#160;You could find me jigging to Irish Dance</li>
+                </ul>
+            </div>
+            <a class="button button-secondary" href="about.html">Learn more</a>
+        </section>
+
+        <hr>
+
+        <section class="section">
+            <div class="section-content">
+                <div class="project-preview">
+                    <div class="project-content">
+                        <div class="carousel">
+                            <a href="projects/photo-editor.html">
+                                <img class="phone" src="resources/photo-editor/main1.jpg" alt="main Photo-editor screen"/>
+                            </a>
+                            <a href="projects/photo-editor.html">
+                                <img class="phone" src="resources/photo-editor/main2.jpg" alt="main Photo-editor screen"/>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <div class="text-and-icons-container">
-                    <div class="text-container">
-                        <p>Hi, I'm Karin Kay Cappello.</p>
-                        <h1>COMING SOON</h1>
-                        <p>My UX/UI portfolio is currently under construction, but please don't hesitate to get in touch!</p>
-                    </div>
-            
-                    <div class="icons-container">
-                        <a target="_blank" href="mailto:karin.kay9@gmail.com"><img class="contact-icon" src="resources/icon-email.svg" alt="Email"></a>
-                        <a target="_blank" href="tel:00447512070893"><img class="contact-icon" src="resources/icon-phone.svg" alt="Phone"></a>
-                        <a target="_blank" href="https://api.whatsapp.com/send?phone=393458801741"><img class="contact-icon" src="resources/icon-whatsapp.svg" alt="Whatsapp"></a>
-                        <a target="_blank" href="https://www.linkedin.com/in/karin-kay-336382173/"><img class="contact-icon" src="resources/icon-linkedin.svg" alt="LinkedIn"></a>
-                        <a target="_blank" href="http://www.facebook.com/karin.kay"><img class="contact-icon" src="resources/icon-facebook.svg" alt="Facebook"></a>
-                    </div>
+                <div class="project-content project-home">
+                    <a href="projects/photo-editor.html"><h2>Photo Editor New Onboarding & Paywall</h2></a>
+                    <p>Edit images with unique filters and effects, or generate AI videos</p>
+                    <a class="button-more" href="projects/photo-editor.html">
+                        <span>Learn more</span>
+                        <img class="arrow-forward" src="resources/arrow-right-white.svg" alt="arrow right"/>
+                    </a>
                 </div>
             </div>
+            <a class="button button-secondary" href="projects.html">Explore all projects</a>
+        </section>
+
+        <hr>
+
+        <div class="button-container">
+            <h3>Let's work together</h3>
+            <a class="button" href="contact.html">Get in touch</a>
         </div>
-    </div>
+
+    </main>
+
+    <hr>
+
+    <footer>
+        <ul class="social-icons remove-list-bullet">
+            <li><a href="mailto:karin.kay9@gmail.com?subject=Hey%20there!"><img src="resources/contacts/email.svg" alt="envelope symbol"/></a></li>
+            <li><a href="https://www.linkedin.com/in/karin-kay-336382173/" target="_blank"><img src="resources/contacts/linkedin.svg" alt="linkedin symbol"/></a></li>
+            <li><a href="https://www.instagram.com/karinkay1/" target="_blank"><img src="resources/contacts/instagram.svg" alt="instagram symbol"/></a></li>
+            <li><a href="https://www.facebook.com/karin.kay" target="_blank"><img src="resources/contacts/facebook.svg" alt="facebook symbol"/></a></li>
+        </ul>
+        <p class="caption">&copy; <time datetime="2023">2023</time> Designed and developed by Karin Kay Cappello.</p>
+    </footer>
+    
+    <script>onStart()</script>
+
 </body>
 </html>
