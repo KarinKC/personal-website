@@ -256,7 +256,7 @@ html {
 }
 
 .logo.expanded > path {
-  fill: #DBECF1;
+  fill: #C5DFE7;
 }
 
 .hamburger-icon {
@@ -311,7 +311,7 @@ html {
     padding: 0 5rem;
     height: 7.5rem;
     background-color: white;
-    border-bottom: 2px solid #DBECF1;
+    border-bottom: 2px solid #C5DFE7;
   }
 
   .hamburger-icon {
@@ -340,7 +340,7 @@ html {
 /* ---------- Footer ---------- */
 
 footer {
-  color: #545454;
+  color: #595959;
   display: flex;
   padding: 2.25rem 2rem;
   flex-direction: column;
@@ -362,31 +362,30 @@ footer {
 }
 
 .arrow-up-design {
-  background-color: #DBECF1;
+  background-color: #C5DFE7;
   width: 2rem;
   height: 2rem;
   border-radius: 2rem;
   padding: 0.25rem;
-  border: 2px solid #DBECF1;
+  border: 2px solid #C5DFE7;
   box-shadow: 0 0.5rem 1rem 0 rgba(20, 20, 20, 0.1);
 }
 
 .arrow-up-design:hover {
   background-color: white;
-  border: 2px solid #DBECF1;
+  border: 2px solid #C5DFE7;
 }
 
 .arrow-down {
   display: flex;
   justify-content: flex-end;
   width: 100%;
-  padding: 0 1.5rem;
+  padding: 0 1rem;
 }
 
 .arrow-down-design {
   width: 2.5rem;
   height: 2.5rem;
-  padding: 0.5rem;
 }
 
 #anchor {
@@ -464,13 +463,12 @@ footer {
     height: 3rem;
     border-radius: 3rem;
     padding: 0.5rem;
-    border: 2px solid #DBECF1;
+    border: 2px solid #C5DFE7;
   }
 
   .arrow-down-design {
-    width: 4rem;
-    height: 4rem;
-    padding: 1rem;
+    width: 3.5rem;
+    height: 3.5rem;
   }
 
   .arrow-up {
@@ -489,8 +487,6 @@ footer {
   }
 
   .arrow-down {
-    display: flex;
-    justify-content: flex-end;
     width: 1600px;
     padding: 0;
   }
@@ -503,7 +499,7 @@ footer {
 /* ---------- Divider ---------- */
 
 hr {
-  border: 1px solid #DBECF1;
+  border: 1px solid #C5DFE7;
   width: 100%;
 }
 
@@ -575,14 +571,14 @@ strong {
 }
 
 .caption {
-  color: #545454;
+  color: #595959;
   font-size: 0.75rem;
   font-weight: 250;
   line-height: 1.5rem; /* 150% */
 }
 
 .caption-link {
-  color: #545454;
+  color: #595959;
 }
 
 h1 {
@@ -638,11 +634,6 @@ h3 {
   .about-title {
     font-size: 1.5rem;
     margin: 0rem 0rem 1rem 0rem;
-  }
-
-  .skills-title {
-    width: 15rem;
-    min-width: 15rem;
   }
   
   .languages {
@@ -714,8 +705,8 @@ p > a{
 }
 
 .button-secondary {
-  color: #545454;
-  background: #DBECF1;
+  color: #2B3B40;
+  background: #C5DFE7;
 }
 
 .button-more {
@@ -749,6 +740,12 @@ p > a{
   padding-top: 0.625rem;
   align-items: flex-start;
   gap: 0.5rem;
+}
+
+.cursor-zoom {
+  cursor: -moz-zoom-in; 
+  cursor: -webkit-zoom-in; 
+  cursor: zoom-in;
 }
 
 /* Desktop Styles */
@@ -826,23 +823,13 @@ p > a{
 }
 
 .profile-picture {
-  width: 7.5rem;
-  height: 7.5rem;
+  width: 10rem;
+  height: 10rem;
   border-radius: 6.25rem;
 }
 
 .profile-picture-home {
   display: none;
-}
-
-/* iPad Styles */
-@media only screen and (min-width: 650px) {
-
-  .profile-picture {
-    width: 10rem;
-    height: 10rem;
-    border-radius: 10rem;
-  }
 }
 
 /* Desktop Styles */
@@ -1019,36 +1006,29 @@ p > a{
 
 /* ---------- Projects Specifics ---------- */
 
-/* ---------- Table ---------- */
+/* ---------- Skills ---------- */
 
-table {
-  width: 100%;
-  max-width: 25rem;
-  border-spacing: 0.25rem 0.25rem;
+.skills-buttons-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0.5rem;
 }
 
-td:first-of-type{
+.skills-button {
   width: 7.5rem;
-}
-
-.skills-square {
-  background-color: #2B3B40;
-  border-radius: 0.2rem;
-}
-
-.empty {
-  background-color: #DBECF1;
+  color: #2B3B40;
+  background-color: #C5DFE7;
+  border: 2px solid #C5DFE7;
+  border-radius: 1rem;
+  text-align: center;
 }
 
 /* Desktop Styles */
 @media only screen and (min-width: 1000px) {
 
-  .table {
-    max-width: 45rem;
-  }
-
-  .skills-square {
-    min-width: 2.5rem;
+  .skills-button {
+    width: 10rem;
   }
 }
 
@@ -1057,7 +1037,7 @@ td:first-of-type{
 .scroll-container {
   padding: 1rem 1rem 1rem 1rem;
   border-radius: 0.5rem;
-  background-color: #DBECF1;
+  background-color: #C5DFE7;
   width: 100%;
   display: flex;
   flex-wrap: nowrap;
@@ -1073,7 +1053,7 @@ td:first-of-type{
 
 /* Track */
 .scroll-container::-webkit-scrollbar-track { 
-  background: #DBECF1;
+  background: #C5DFE7;
   border-radius: 1rem;
 }
 

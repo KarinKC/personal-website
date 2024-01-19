@@ -13,6 +13,7 @@ function onStart() {
  */
 function onLoad() {
     // Empty for now.
+    
 }
 
 function onHamburgerIconClick() {
