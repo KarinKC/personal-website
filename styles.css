@@ -83,7 +83,6 @@ html {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 2.25rem 0rem;
   width: 100%;
   max-width: 100%;
   gap: 1.5rem;
@@ -636,6 +635,7 @@ h4 {
   
   .languages {
     gap: 3rem;
+    padding-top: 1.5rem;
   }
   
   .caption {
@@ -859,6 +859,7 @@ p > a{
   border-radius: 11rem;
 }
 }
+
 /* ---------- Project Preview ---------- */
 
 .project-preview {
@@ -1014,6 +1015,146 @@ p > a{
   }
 }
 
+/* ---------- About ---------- */
+
+.design-approach-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  text-align: left;
+}
+
+.design-approach-box {
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+  padding: 2rem;
+  gap: 1rem;
+  background-color: #F5F5F5;
+}
+
+.design-approach-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.design-approach-icon {
+  width: 3rem;
+}
+
+.other-works-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 100%;
+}
+
+.other-works-image-container {
+  display: flex;
+  max-width: 100%;
+  position: relative;
+}
+
+.other-works-image {
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.open-in-new-icon {
+  width: 2rem;
+  position: absolute;
+  bottom: 0.5rem;
+  right: 0.5rem;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  border-radius: 1rem;
+  color: white;
+}
+
+.overlay-light {
+  background-color: rgb(43, 59, 64, 0.5);
+}
+
+.overlay-dark {
+  background-color: rgba(43, 59, 64, 0.8);
+}
+
+
+/* Desktop Styles */
+@media only screen and (min-width: 1000px) {
+
+  .design-approach-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 1.5rem;
+  }
+
+  .design-approach-box {
+    flex: 1 0 calc(50% - 0.5rem); /* Two columns layout */
+  }
+
+
+  .design-approach-title {
+    gap: 2.5rem;
+  }
+
+  .design-approach-icon {
+    width: 4rem;
+  }
+
+  .other-works-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 1.5rem;
+  }
+
+  .other-works-image-container {
+    flex: 1 0 calc(50% - 0.5rem); /* Two columns layout */
+  }
+  
+  .other-works-image-container:last-child {
+    flex: 0 0 calc(50% - 0.5rem);
+  }
+
+  .open-in-new-icon {
+    width: 2rem;
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    opacity: 0.5;
+    transition: opacity 0.3s ease; /* Smooth transition */
+  }
+
+  .other-works-image-container:hover .open-in-new-icon {
+    opacity: 1;
+  }
+
+  .overlay {
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease; /* Smooth transition */
+  }
+
+  .other-works-image-container:hover .overlay {
+    opacity: 1; /* Display overlay on hover */
+  }
+}
+
 
 
 
@@ -1043,6 +1184,15 @@ p > a{
 
   .skills-button {
     width: 10rem;
+  }
+
+  .skills-buttons-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding-top: 1.5rem;
   }
 }
 
@@ -1760,27 +1910,6 @@ video {
   to   { opacity: 1; }
 }
 
-
-
-/* .section , .section-secondary , .section-project {
-  animation: auto linear slide-from-left both;
-  animation-timeline: view();
-  animation-range: entry 5% cover 20%;
-}
-
-@keyframes slide-from-left {
-  from {
-    opacity: 0;
-    transform: translateX(+100%);
-    filter: blur(5px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-    filter: blur(0);
-  }
-} */
-
 .section , .section-secondary , .section-project {
   animation: fade-in linear forwards;
   animation-timeline: view();
@@ -1796,148 +1925,5 @@ video {
   to {
     opacity: 1;
     filter: blur(0);
-  }
-}
-
-
-
-
-
-
-
-.design-approach-container {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  width: 100%;
-  margin: 2.5rem;
-}
-
-.design-approach-box {
-  display: flex;
-  flex-direction: column;
-  border-radius: 1rem;
-  padding: 2rem;
-  gap: 1rem;
-  background-color: #F5F5F5;
-}
-
-.design-approach-title {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 1rem;
-}
-
-.design-approach-icon {
-  width: 3rem;
-}
-
-.other-works-container {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  max-width: 100%;
-}
-
-.other-works-image-container {
-  display: flex;
-  max-width: 100%;
-  position: relative;
-}
-
-.other-works-image {
-  width: 100%;
-  border-radius: 1rem;
-}
-
-.open-in-new-icon {
-  width: 2rem;
-  position: absolute;
-  bottom: 0.5rem;
-  right: 0.5rem;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 2rem;
-  border-radius: 1rem;
-}
-
-.overlay-light {
-  background-color: rgb(43, 59, 64, 0.5);
-}
-
-.overlay-dark {
-  background-color: rgba(43, 59, 64, 0.8);
-}
-
-.text-light {
-  color: white;
-  border-radius: 1rem;
-  padding: 1rem;
-}
-
-
-/* Desktop Styles */
-@media only screen and (min-width: 1000px) {
-  .design-approach-icon {
-    width: 4rem;
-  }
-
-  .design-approach-title {
-    gap: 2.5rem;
-  }
-
-  .design-approach-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-  
-  .design-approach-box {
-    flex: 1 0 calc(50% - 0.5rem); /* Two columns layout */
-  }
-
-  .open-in-new-icon {
-    width: 2rem;
-    position: absolute;
-    bottom: 1rem;
-    right: 1rem;
-  }
-
-  .overlay {
-    opacity: 0; /* Initially hidden */
-    transition: opacity 0.3s ease; /* Smooth transition */
-  }
-
-  .other-works-image-container:hover .overlay {
-    opacity: 1; /* Display overlay on hover */
-  }
-
-  .other-works-container {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-  .other-works-image-container {
-    flex: 1 0 calc(50% - 0.5rem); /* Two columns layout */
-  }
-  
-  .other-works-image-container:last-child {
-    flex: 0 0 calc(50% - 0.5rem);
-  }
-
-  .text-light {
-    background-color: transparent;
   }
 }
