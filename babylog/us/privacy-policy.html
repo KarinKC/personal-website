@@ -13,7 +13,7 @@
     <script>
         async function fetchPrivacyPolicy() {
             try {
-                const response = await fetch("privacy-policy.us.json");
+                const response = await fetch("privacy-policy.json");
                 const data = await response.json();
 
                 document.getElementById("title").innerText = data.title;
