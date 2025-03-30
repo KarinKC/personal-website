@@ -17,7 +17,7 @@
                 const data = await response.json();
 
                 document.getElementById("title").innerText = data.title;
-                document.getElementById("effective-date").innerText = "Effective Date: " + data.effective_date;
+                document.getElementById("effective-date").innerText = "Data di Entrata in Vigore: " + data.effective_date;
 
                 const contentDiv = document.getElementById("content");
                 data.sections.forEach(section => {
