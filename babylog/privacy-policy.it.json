@@ -1,0 +1,48 @@
+{
+    "title": "Informativa sulla Privacy",
+    "effective_date": "30 Marzo 2025",
+    "sections": [
+        {
+            "title": "1. Introduzione",
+            "content": "Benvenuto in BabyLog - Baby Tracker. La tua privacy è importante per noi e ci impegniamo a proteggerla. Questa Informativa sulla Privacy spiega come gestiamo i tuoi dati quando utilizzi la nostra app."
+        },
+        {
+            "title": "2. Raccolta e Archiviazione dei Dati",
+            "content": "BabyLog - Baby Tracker non raccoglie, archivia o trasmette dati personali a server esterni. Tutte le informazioni registrate, incluse le sessioni di allattamento e i cambi di pannolino, vengono salvate solo sul tuo dispositivo. Noi, in qualità di sviluppatori, non abbiamo accesso ai tuoi dati."
+        },
+        {
+            "title": "3. Utilizzo dei Dati",
+            "content": "Poiché tutti i dati vengono archiviati localmente sul tuo dispositivo, essi vengono utilizzati esclusivamente per il funzionamento dell'app.",
+            "list": [
+                "Visualizzazione dei registri di allattamento e pannolini.",
+                "Generazione di riepiloghi giornalieri e grafici.",
+                "Fornitura di widget e funzionalità Siri Shortcut."
+            ]
+        },
+        {
+            "title": "4. Servizi di Terze Parti",
+            "content": "BabyLog - Baby Tracker non utilizza servizi di analisi, pubblicità o tracciamento di terze parti. I tuoi dati rimangono privati e non vengono mai condivisi con terzi."
+        },
+        {
+            "title": "5. Sicurezza dei Dati",
+            "content": "Poiché tutti i dati sono archiviati localmente sul tuo dispositivo, ci affidiamo alle funzionalità di sicurezza integrate nel dispositivo per proteggerli. Ti consigliamo di utilizzare uno schermo di blocco sicuro e abilitare la crittografia del dispositivo, se possibile."
+        },
+        {
+            "title": "6. Controllo dell'Utente e Cancellazione dei Dati",
+            "content": "Hai il pieno controllo sui tuoi dati. Se desideri eliminare i tuoi registri, puoi farlo direttamente dall'app rimuovendo le singole voci o disinstallando l'app, cancellando così tutti i dati memorizzati sul dispositivo."
+        },
+        {
+            "title": "7. Privacy dei Bambini",
+            "content": "BabyLog - Baby Tracker è progettato per genitori e tutori. Non raccogliamo dati personali dai bambini di età inferiore ai 13 anni, poiché non raccogliamo alcun dato."
+        },
+        {
+            "title": "8. Modifiche a Questa Informativa sulla Privacy",
+            "content": "Potremmo aggiornare questa Informativa sulla Privacy di tanto in tanto. Se vengono apportate modifiche, aggiorneremo la data di entrata in vigore in cima a questa informativa. L'uso continuato dell'app dopo qualsiasi modifica costituisce l'accettazione della versione aggiornata della politica."
+        },
+        {
+            "title": "9. Contattaci",
+            "content": "Se hai domande su questa Informativa sulla Privacy, contattaci a:",
+            "contact_email": "karin.kay.cappello@gmail.com"
+        }
+    ]
+}

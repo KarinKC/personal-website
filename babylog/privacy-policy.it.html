@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BabyLog - Informativa sulla Privacy</title>
+</head>
+<body>
+    <h1 id="title">Loading...</h1>
+    <p id="effective-date"></p>
+    <div id="content"></div>
+
+    <script>
+        async function fetchPrivacyPolicy() {
+            try {
+                const response = await fetch("privacy-policy.it.json");
+                const data = await response.json();
+
+                document.getElementById("title").innerText = data.title;
+                document.getElementById("effective-date").innerText = "Effective Date: " + data.effective_date;
+
+                const contentDiv = document.getElementById("content");
+                data.sections.forEach(section => {
+                    const sectionTitle = document.createElement("h2");
+                    sectionTitle.innerText = section.title;
+                    contentDiv.appendChild(sectionTitle);
+
+                    const sectionContent = document.createElement("p");
+                    sectionContent.innerText = section.content;
+                    contentDiv.appendChild(sectionContent);
+
+                    if (section.list) {
+                        const ul = document.createElement("ul");
+                        section.list.forEach(item => {
+                            const li = document.createElement("li");
+                            li.innerText = item;
+                            ul.appendChild(li);
+                        });
+                        contentDiv.appendChild(ul);
+                    }
+
+                    if (section.contact_email) {
+                        const emailLink = document.createElement("a");
+                        emailLink.href = "mailto:" + section.contact_email;
+                        emailLink.innerText = section.contact_email;
+                        contentDiv.appendChild(emailLink);
+                    }
+                });
+            } catch (error) {
+                document.getElementById("title").innerText = "Failed to load privacy policy.";
+            }
+        }
+
+        fetchPrivacyPolicy();
+    </script>
+</body>
+</html>

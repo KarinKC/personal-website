@@ -1,0 +1,48 @@
+{
+    "title": "Privacy Policy",
+    "effective_date": "March 30th, 2025",
+    "sections": [
+        {
+            "title": "1. Introduction",
+            "content": "Welcome to BabyLog - Baby Tracker. Your privacy is important to us, and we are committed to protecting it. This Privacy Policy explains how we handle your data when you use our app."
+        },
+        {
+            "title": "2. Data Collection and Storage",
+            "content": "BabyLog - Baby Tracker does not collect, store, or transmit any personal data to external servers. All information you log, including feeding sessions and nappy changes, is stored only on your device. We, as developers, do not have access to your data."
+        },
+        {
+            "title": "3. Data Usage",
+            "content": "Since all data is stored locally on your device, it is used solely for the functionality of the app.",
+            "list": [
+                "Displaying feeding and nappy logs.",
+                "Generating daily summaries and charts.",
+                "Providing widget and Siri shortcut functionality."
+            ]
+        },
+        {
+            "title": "4. Third-Party Services",
+            "content": "BabyLog - Baby Tracker does not use third-party analytics, advertising, or tracking services. Your data remains private and is never shared with third parties."
+        },
+        {
+            "title": "5. Data Security",
+            "content": "Because all data is stored locally on your device, we rely on your device's built-in security features to protect your information. We recommend using a secure lock screen and enabling device encryption where possible."
+        },
+        {
+            "title": "6. User Control & Data Deletion",
+            "content": "You have full control over your data. If you wish to delete your logs, you can do so within the app by removing individual entries or uninstalling the app, which will erase all stored data from your device."
+        },
+        {
+            "title": "7. Children’s Privacy",
+            "content": "BabyLog - Baby Tracker is designed for parents and caregivers. We do not collect personal data from children under the age of 13, as we do not collect any data at all."
+        },
+        {
+            "title": "8. Changes to This Privacy Policy",
+            "content": "We may update this Privacy Policy from time to time. If changes are made, we will update the effective date at the top of this policy. Continued use of the app after any modifications constitutes your acceptance of the updated policy."
+        },
+        {
+            "title": "9. Contact Us",
+            "content": "If you have any questions about this Privacy Policy, please contact us at:",
+            "contact_email": "karin.kay.cappello@gmail.com"
+        }
+    ]
+}
