@@ -916,6 +916,15 @@ p > a{
   scroll-behavior: smooth;
 }
 
+.app-icon {
+  width: 6rem;
+  display: flex;
+  flex-shrink: 0;
+  scroll-snap-align: start;
+  scroll-behavior: smooth;
+  border-radius: 22.5%;
+}
+
 /* Desktop Styles */
 @media only screen and (min-width: 1000px) {
   .project-preview {
@@ -960,6 +969,10 @@ p > a{
     width: 18.5rem;
   }
 
+  .app-icon {
+    width: 12rem;
+    border-radius: 22.5%;
+  }
 }
 
 /* Big Desktop Styles */

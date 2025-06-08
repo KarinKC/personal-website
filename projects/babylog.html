@@ -1,0 +1,108 @@
+<!DOCTYPE html>project
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BabyLog</title>
+    <link rel="stylesheet" href="../styles.css">
+    <meta name="theme-color" content="white"/>
+    <meta name='viewport'content='width=device-width, initial-scale=1.0, maximum-scale=1.0'/>
+    <script src="../code.js"></script>
+</head>
+
+<body onload="onLoad()">
+
+    <header class="nav-container expandable">
+        <div class="nav-buttons expandable">
+            <a href="../index.html">
+                <svg class="logo expandable" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3 0C1.34315 0 0 1.34315 0 3V37C0 38.6569 1.34315 40 3 40H37C38.6569 40 40 38.6569 40 37V3C40 1.34315 38.6569 0 37 0H3ZM12.6625 16.1738V4.8H10.4L10.4 35.9657H12.6625V24.6873L17.5899 36L19.3248 36L22.5244 36L27.4519 24.6873V35.9657H29.7143V4.80001L27.4519 4.80001V16.1738L22.5139 4.83693L20.8 4.83692L17.6004 4.83692L12.6625 16.1738ZM24.3906 24.2399L20.0572 34.2999L16.1686 25.2727C16.6571 25.6002 17.1922 25.8603 17.7604 26.0422C19.1516 26.4876 20.6543 26.4369 22.0124 25.8986C22.929 25.5353 23.7415 24.965 24.3906 24.2399ZM24.9479 22.9459L26.0314 20.4307L25.1797 18.4536L24.0831 18.768C23.7915 17.7506 23.1561 16.8658 22.2852 16.2644C21.4144 15.663 20.3619 15.3822 19.3072 15.4698C18.2525 15.5573 17.2608 16.0079 16.501 16.7447C15.7413 17.4815 15.2605 18.4589 15.1406 19.5105C15.0208 20.562 15.2692 21.6226 15.8436 22.5114C16.418 23.4003 17.2829 24.0626 18.2908 24.3853C19.2988 24.708 20.3874 24.6712 21.3713 24.2813C22.3552 23.8913 23.1734 23.1722 23.6866 22.2466L24.9479 22.9459ZM23.7919 15.2318L20.0572 6.56148L16.6383 14.4984C17.4115 14.0723 18.271 13.81 19.1632 13.736C20.6191 13.6151 22.0718 14.0027 23.2738 14.8329C23.454 14.9573 23.6269 15.0905 23.7919 15.2318Z"/>
+                </svg>
+            </a>   
+            <div class="hamburger-icon expandable" onclick="onHamburgerIconClick()"></div>   
+        </div>
+        <nav class="nav-list expandable">
+            <ul class="remove-list-bullet">
+                <li><a class="nav-not-current" href="../index.html">Home</a></li>
+                <li><a href="../projects.html">Projects</a></li>
+                <li><a class="nav-not-current" href="../about.html">About</a></li>
+                <li><a class="nav-not-current" href="../contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="nav-overlay expandable" onclick="onNavContainerClick()"></div>
+    </header>
+
+    <div class="page">
+        <div class="project-preview project-preview-hero">
+            <div class="project-content">
+                <img class="app-icon" src="../resources/babylog/icon.jpg" alt="main Odeon screen"/>
+            </div>
+            <div class="project-content">
+                <h3>BabyLog - Baby Tracker</h3>
+                <div class="project-subtitle">
+                    <p>The easiest way to track your baby's feeding and nappy changes</p>
+                    <p class="caption">
+                        <span>Published in <a class="caption-link" href="https://apps.apple.com/gb/app/babylog-baby-tracker/id6743771392" target="_blank">app stores</a></span>
+                        <span>·</span>
+                        <span>March 2025</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr class="hero-divider">
+
+    <div class="arrow-down animated bounce">
+        <a href="#anchor">
+            <img class="arrow-down-design" src="../resources/arrow-down.svg" alt="arrow-down">
+        </a>
+    </div>
+
+    <main class="page page-projects" style="justify-content: space-between;">
+
+        <div id="anchor" class="section-project" style="align-items: center; text-align: center;">
+            <h3>⚠️ This page is under construction ⚠️</h3>
+            <p>In the meanwhile, you can check the app on the App Store: <a class="caption-link" href="https://apps.apple.com/gb/app/babylog-baby-tracker/id6743771392" target="_blank">here</a>.</p>
+        </div>
+
+        <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2.25rem; width: 100%;">
+            <div class="bring-to-top-page">
+                <hr>
+                <a class="arrow-up" href="#"><img class="arrow-up-design" src="../resources/arrow-up.svg" alt="arrow-up"></a>
+            </div>
+    
+            <div class="button-container">
+                <div class="previous-next-project">
+                    <a class="button-more" href="../projects/growit.html">
+                        <img class="arrow-forward" src="../resources/arrow-left-white.svg" alt="arrow left"/>
+                        <span>Previous project</span>
+                    </a>
+                    <a class="button-more" href="../projects/photo-editor.html">
+                        <span>Next project</span>
+                        <img class="arrow-forward" src="../resources/arrow-right-white.svg" alt="arrow right"/>
+                    </a>
+                </div>
+                
+                <a class="button" href="../contact.html">Get in touch</a>
+            </div>
+        </div>
+        
+    </main>
+
+    <hr>
+
+    <footer>
+        <ul class="social-icons remove-list-bullet">
+            <li><a href="mailto:karin.kay9@gmail.com?subject=Hey%20there!"><img src="../resources/contacts/email.svg" alt="envelope symbol"/></a></li>
+            <li><a href="https://www.linkedin.com/in/karin-kay-336382173/" target="_blank"><img src="../resources/contacts/linkedin.svg" alt="linkedin symbol"/></a></li>
+            <li><a href="https://medium.com/@karin.kay9" target="_blank"><img src="../resources/contacts/medium.svg" alt="Medium symbol"/></a></li>
+            <li><a href="https://www.instagram.com/karinkay1/" target="_blank"><img src="../resources/contacts/instagram.svg" alt="instagram symbol"/></a></li>
+            <li><a href="https://www.facebook.com/karin.kay" target="_blank"><img src="../resources/contacts/facebook.svg" alt="facebook symbol"/></a></li>
+        </ul>
+        <p class="caption">&copy; <time datetime="2023">2023</time> Designed and developed by <br class="break-line">Karin Kay Cappello.</p>
+    </footer>
+
+    <script>onStart()</script>
+
+</body>
+</html>
