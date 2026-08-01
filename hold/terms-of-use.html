@@ -3,12 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hold - Terms of Use</title>
+    <title>Hold — Terms of Use</title>
+    <link rel="stylesheet" href="legal.css">
 </head>
 <body>
-    <h1 id="title">Loading...</h1>
-    <p id="effective-date"></p>
-    <div id="content"></div>
+    <main class="page">
+        <a class="brand" href="https://www.karinkc.com/" aria-label="Hold">
+            <span class="brand-mark" aria-hidden="true"></span>
+            <span class="brand-name">Hold</span>
+        </a>
+
+        <nav class="legal-nav" aria-label="Legal">
+            <a href="terms-of-use.html" aria-current="page">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </nav>
+
+        <h1 id="title">Loading…</h1>
+        <p id="effective-date"></p>
+        <div id="content"></div>
+
+        <footer>
+            <p>Hold · Gratitude Journal</p>
+        </footer>
+    </main>
 
     <script>
         async function fetchDocument() {
