@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hold — Terms of Use</title>
+    <link rel="stylesheet" href="legal.css">
+</head>
+<body>
+    <main class="page">
+        <a class="brand" href="https://www.karinkc.com/" aria-label="Hold">
+            <span class="brand-mark" aria-hidden="true"></span>
+            <span class="brand-name">Hold</span>
+        </a>
+
+        <nav class="legal-nav" aria-label="Legal">
+            <a href="terms-of-use.html" aria-current="page">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </nav>
+
+        <h1 id="title">Loading…</h1>
+        <p id="effective-date"></p>
+        <div id="content"></div>
+
+        <footer>
+            <p>Hold · Gratitude Journal</p>
+        </footer>
+    </main>
+
+    <script>
+        async function fetchDocument() {
+            try {
+                const response = await fetch("terms-of-use.json");
+                const data = await response.json();
+
+                document.getElementById("title").innerText = data.title;
+                document.getElementById("effective-date").innerText = "Effective Date: " + data.effective_date;
+
+                const contentDiv = document.getElementById("content");
+                data.sections.forEach(section => {
+                    const sectionTitle = document.createElement("h2");
+                    sectionTitle.innerText = section.title;
+                    contentDiv.appendChild(sectionTitle);
+
+                    const sectionContent = document.createElement("p");
+                    sectionContent.innerText = section.content;
+                    contentDiv.appendChild(sectionContent);
+
+                    if (section.list) {
+                        const ul = document.createElement("ul");
+                        section.list.forEach(item => {
+                            const li = document.createElement("li");
+                            li.innerText = item;
+                            ul.appendChild(li);
+                        });
+                        contentDiv.appendChild(ul);
+                    }
+
+                    if (section.contact_email) {
+                        const emailLink = document.createElement("a");
+                        emailLink.href = "mailto:" + section.contact_email;
+                        emailLink.innerText = section.contact_email;
+                        contentDiv.appendChild(emailLink);
+                    }
+                });
+            } catch (error) {
+                document.getElementById("title").innerText = "Failed to load terms of use.";
+            }
+        }
+
+        fetchDocument();
+    </script>
+</body>
+</html>

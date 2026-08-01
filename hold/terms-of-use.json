@@ -1,0 +1,90 @@
+{
+  "title": "Terms of Use",
+  "effective_date": "August 1, 2026",
+  "sections": [
+    {
+      "title": "1. Agreement to These Terms",
+      "content": "These Terms of Use (\"Terms\") govern your access to and use of the Hold iOS application (\"Hold\" or \"the App\"), provided by the developer operating under the KarinKC brand (\"we\", \"us\", or \"our\"). By downloading, accessing, or using Hold, you agree to these Terms. If you do not agree, do not use the App."
+    },
+    {
+      "title": "2. The App",
+      "content": "Hold is a self-help tool that combines a morning press-and-hold ritual, optional app shielding via Apple Screen Time / Family Controls, and an evening gratitude journaling practice. Features may change over time as we improve the App."
+    },
+    {
+      "title": "3. License",
+      "content": "Subject to these Terms, we grant you a personal, non-exclusive, non-transferable, revocable license to use Hold on Apple devices you own or control, as permitted by the App Store Terms of Use. You may not copy, modify, distribute, reverse engineer, or create derivative works of the App except to the extent such restriction is prohibited by law."
+    },
+    {
+      "title": "4. Not Medical or Professional Advice",
+      "content": "Hold is for personal wellness and journaling purposes only. It is not a medical device and does not provide medical, psychological, or therapeutic advice, diagnosis, or treatment. If you are experiencing a mental health crisis or medical emergency, contact a qualified professional or emergency services."
+    },
+    {
+      "title": "5. Accounts and Apple ID",
+      "content": "Hold does not require you to create a separate Hold account. Purchases and subscriptions are tied to your Apple ID through the App Store. You are responsible for maintaining the security of your Apple ID and device."
+    },
+    {
+      "title": "6. Subscriptions and Payments",
+      "content": "Some features of Hold may require a paid subscription (\"Hold Pro\" or similar). If you purchase a subscription:",
+      "list": [
+        "Payment will be charged to your Apple ID account at confirmation of purchase.",
+        "Subscriptions automatically renew unless auto-renew is turned off at least 24 hours before the end of the current period.",
+        "Your account will be charged for renewal within 24 hours prior to the end of the current period at the rate shown in the App Store.",
+        "You can manage or cancel subscriptions in your Apple ID account settings after purchase.",
+        "Any unused portion of a free trial, if offered, is forfeited when you purchase a subscription where applicable."
+      ]
+    },
+    {
+      "title": "7. Screen Time Features",
+      "content": "Optional app-blocking features rely on Apple's Screen Time and Family Controls frameworks and require your permission. You choose which apps or categories to shield. We are not responsible for inability to access blocked apps, misconfiguration of shields, or limitations or changes Apple makes to these system APIs. You can adjust or remove blocking selections in Hold settings (and related iOS Screen Time settings) as available."
+    },
+    {
+      "title": "8. Your Content",
+      "content": "Gratitude entries and related journal content you create remain yours. Content is stored on your device. You are responsible for backing up your device if you wish to retain that content. Uninstalling Hold or deleting data may permanently remove your entries from that device."
+    },
+    {
+      "title": "9. Acceptable Use",
+      "content": "You agree not to misuse Hold, including by attempting to interfere with the App's operation, circumvent subscription or security mechanisms, or use the App in violation of applicable law or Apple's terms."
+    },
+    {
+      "title": "10. Intellectual Property",
+      "content": "Hold, including its name, design, text, graphics, and software, is owned by us or our licensors and is protected by intellectual property laws. These Terms do not grant you any rights to our trademarks or other brand assets except as needed to use the App."
+    },
+    {
+      "title": "11. Third-Party Services",
+      "content": "Hold uses Apple services and may use RevenueCat for subscription management. Your use of those services is subject to their applicable terms and privacy policies. We are not responsible for third-party services we do not control."
+    },
+    {
+      "title": "12. Disclaimer of Warranties",
+      "content": "Hold is provided \"as is\" and \"as available\" without warranties of any kind, whether express or implied, including merchantability, fitness for a particular purpose, and non-infringement, to the maximum extent permitted by law. We do not warrant that the App will be uninterrupted, error-free, or free of harmful components."
+    },
+    {
+      "title": "13. Limitation of Liability",
+      "content": "To the maximum extent permitted by law, we shall not be liable for any indirect, incidental, special, consequential, or punitive damages, or any loss of data, profits, or goodwill, arising from your use of or inability to use Hold. Our total liability for any claim arising out of these Terms or the App shall not exceed the greater of (a) the amount you paid us for Hold subscriptions in the twelve (12) months before the claim or (b) zero if you have not paid us, except where liability cannot be limited under applicable law."
+    },
+    {
+      "title": "14. Indemnity",
+      "content": "You agree to indemnify and hold us harmless from claims, damages, losses, and expenses (including reasonable legal fees) arising from your misuse of Hold or your violation of these Terms, to the extent permitted by law."
+    },
+    {
+      "title": "15. Changes to the App or Terms",
+      "content": "We may update Hold and these Terms from time to time. We will revise the effective date when Terms change. Continued use of Hold after changes become effective constitutes acceptance of the updated Terms, except where applicable law requires otherwise. If you do not agree, stop using the App and cancel any subscription through Apple."
+    },
+    {
+      "title": "16. Termination",
+      "content": "You may stop using Hold at any time and may delete the App from your device. We may suspend or stop providing the App or particular features if required by law, platform rules, or to address misuse or security issues. Provisions that by their nature should survive (including license restrictions, disclaimers, and limitations of liability) will survive termination."
+    },
+    {
+      "title": "17. Apple-Specific Terms",
+      "content": "You acknowledge that these Terms are between you and us, not Apple. Apple is not responsible for the App or its content. Apple has no obligation to provide maintenance or support for Hold. To the maximum extent permitted by law, Apple has no warranty obligation with respect to the App; any claims relating to the App are between you and us (subject to these Terms), not Apple. Apple is a third-party beneficiary of these Terms and may enforce them against you."
+    },
+    {
+      "title": "18. Governing Law",
+      "content": "These Terms are governed by the laws of England and Wales, without regard to conflict-of-law principles, except that mandatory consumer protection laws of your country of residence may still apply. Courts in England and Wales shall have jurisdiction, subject to any non-waivable rights you have to bring proceedings in your local courts."
+    },
+    {
+      "title": "19. Contact Us",
+      "content": "If you have questions about these Terms, please contact us at:",
+      "contact_email": "karin.kay.cappello@gmail.com"
+    }
+  ]
+}

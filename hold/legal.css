@@ -1,0 +1,177 @@
+:root {
+    --bg: #0F2D33;
+    --surface: #002F36;
+    --primary: #F3F4F6;
+    --secondary: rgba(243, 244, 246, 0.72);
+    --accent: #4DB6AC;
+    --circle: #7ED9C3;
+    --link: #7ED9C3;
+    --link-hover: #F3F4F6;
+    --rule: rgba(243, 244, 246, 0.14);
+    --max-width: 42rem;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+    color-scheme: dark;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background:
+        radial-gradient(ellipse 70% 45% at 100% 0%, rgba(126, 217, 195, 0.16), transparent 55%),
+        radial-gradient(ellipse 55% 40% at 0% 100%, rgba(77, 182, 172, 0.12), transparent 50%),
+        var(--bg);
+    color: var(--primary);
+    font-family: ui-rounded, "SF Pro Rounded", "Hiragino Maru Gothic ProN", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-weight: 300;
+    font-size: 1.125rem;
+    line-height: 1.65;
+}
+
+.page {
+    width: min(100% - 2.5rem, var(--max-width));
+    margin: 0 auto;
+    padding: 2.5rem 0 4rem;
+}
+
+.brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.65rem;
+    margin-bottom: 2rem;
+    text-decoration: none;
+    color: var(--primary);
+}
+
+.brand-mark {
+    width: 1.75rem;
+    height: 1.75rem;
+    border-radius: 50%;
+    background: linear-gradient(160deg, var(--circle) 0%, var(--accent) 100%);
+    box-shadow: 0 0 0 3px rgba(126, 217, 195, 0.22);
+}
+
+.brand-name {
+    font-size: 1.25rem;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+}
+
+nav.legal-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem 1.25rem;
+    margin-bottom: 2.25rem;
+    padding-bottom: 1.25rem;
+    border-bottom: 1px solid var(--rule);
+}
+
+nav.legal-nav a {
+    color: var(--secondary);
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+nav.legal-nav a:hover {
+    color: var(--link-hover);
+}
+
+nav.legal-nav a[aria-current="page"] {
+    color: var(--circle);
+    font-weight: 600;
+}
+
+h1 {
+    margin: 0 0 0.5rem;
+    font-size: clamp(2rem, 5vw, 2.75rem);
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    line-height: 1.15;
+    color: var(--primary);
+}
+
+#effective-date {
+    margin: 0 0 2.5rem;
+    color: var(--secondary);
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+#content h2 {
+    margin: 2.25rem 0 0.75rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    line-height: 1.3;
+    color: var(--primary);
+}
+
+#content p {
+    margin: 0 0 1rem;
+    color: var(--primary);
+}
+
+#content ul {
+    margin: 0 0 1.25rem;
+    padding-left: 1.25rem;
+}
+
+#content li {
+    margin-bottom: 0.45rem;
+    color: var(--primary);
+}
+
+#content li::marker {
+    color: var(--accent);
+}
+
+#content a {
+    color: var(--link);
+    font-weight: 500;
+    text-decoration: underline;
+    text-decoration-color: rgba(126, 217, 195, 0.45);
+    text-underline-offset: 0.2em;
+}
+
+#content a:hover {
+    color: var(--link-hover);
+}
+
+footer {
+    margin-top: 3rem;
+    padding-top: 1.25rem;
+    border-top: 1px solid var(--rule);
+    color: var(--secondary);
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+footer a {
+    color: var(--link);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+footer a:hover {
+    color: var(--link-hover);
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 1.05rem;
+    }
+
+    .page {
+        width: min(100% - 1.75rem, var(--max-width));
+        padding-top: 1.75rem;
+    }
+}

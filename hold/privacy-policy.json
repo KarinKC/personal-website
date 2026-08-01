@@ -1,0 +1,81 @@
+{
+  "title": "Privacy Policy",
+  "effective_date": "August 1, 2026",
+  "sections": [
+    {
+      "title": "1. Introduction",
+      "content": "Welcome to Hold (\"Hold\", \"the App\"), a gratitude journal and morning ritual app for iOS. Your privacy is important to us. This Privacy Policy explains what information is handled when you use Hold, how it is stored, and what choices you have. Hold is provided by the developer operating under the KarinKC brand (\"we\", \"us\", or \"our\")."
+    },
+    {
+      "title": "2. Data We Store on Your Device",
+      "content": "Hold is designed to keep your journal and ritual data on your device. We do not operate a Hold backend that receives your gratitude entries or check-ins. Information stored locally on your device may include:",
+      "list": [
+        "Gratitude journal entries and related metadata (such as dates and completion status).",
+        "Morning check-in / ritual completion records.",
+        "App settings, such as your evening reminder time and onboarding progress.",
+        "Identifiers needed for Screen Time / Family Controls features, including the set of apps or categories you choose to block (stored via Apple's frameworks and an App Group on your device).",
+        "A local Pro entitlement flag used so app extensions can reflect your subscription status."
+      ]
+    },
+    {
+      "title": "3. Permissions",
+      "content": "Depending on how you use Hold, the App may request system permissions:",
+      "list": [
+        "Screen Time / Family Controls \u2014 to shield the apps you select until you complete the morning ritual. Apple manages this capability; we do not receive a list of your apps on our servers.",
+        "Notifications \u2014 to send optional evening reminders you configure. You can disable notifications in iOS Settings at any time."
+      ]
+    },
+    {
+      "title": "4. Purchases and Subscriptions",
+      "content": "If you purchase a Hold subscription, payment is processed by Apple through the App Store. We use RevenueCat to help manage subscription status and entitlements. RevenueCat and Apple may process purchase-related information (such as anonymous app user identifiers, product identifiers, and subscription status) in accordance with their own privacy policies. We do not receive your full payment card details."
+    },
+    {
+      "title": "5. Analytics and Advertising",
+      "content": "Hold does not currently use third-party analytics, advertising, or tracking SDKs. We do not sell your personal information. If we introduce analytics in the future, we will update this Privacy Policy and, where required, seek any additional consent."
+    },
+    {
+      "title": "6. How Your Data Is Used",
+      "content": "On-device data is used solely to provide Hold's features, including:",
+      "list": [
+        "Showing your gratitude history, streaks, and recap views.",
+        "Running the morning unlock ritual and evening reflection flow.",
+        "Applying and clearing app shields according to your selections and ritual completion.",
+        "Scheduling evening reminder notifications.",
+        "Unlocking Pro features when a valid subscription is active."
+      ]
+    },
+    {
+      "title": "7. Data Sharing",
+      "content": "We do not sell or rent your personal information. Limited information may be processed by:",
+      "list": [
+        "Apple \u2014 App Store, payments, Screen Time / Family Controls, notifications, and device security.",
+        "RevenueCat \u2014 subscription and entitlement management for purchases you make through Apple."
+      ]
+    },
+    {
+      "title": "8. Data Security",
+      "content": "Because journal and ritual data are stored locally, protection depends largely on your device security (passcode, Face ID / Touch ID, and device encryption). We recommend keeping your device locked and updated. Subscription status is handled through Apple and RevenueCat's infrastructure."
+    },
+    {
+      "title": "9. Data Retention and Deletion",
+      "content": "Local Hold data remains on your device until you delete individual entries in the App (where available), clear relevant settings, or uninstall the App, which removes locally stored Hold data from that device. Subscription records associated with your Apple ID are retained by Apple (and, as applicable, RevenueCat) according to their policies and legal obligations. Restoring purchases on a new device may restore Pro access without restoring deleted journal content."
+    },
+    {
+      "title": "10. Children's Privacy",
+      "content": "Hold is not directed to children under 13 (or the minimum age required in your jurisdiction). We do not knowingly collect personal information from children. If you believe a child has provided personal information through Hold in a way that reaches us, please contact us and we will take appropriate steps."
+    },
+    {
+      "title": "11. International Users",
+      "content": "Hold is distributed through the Apple App Store. Purchase and platform data may be processed in countries where Apple or RevenueCat operate. By using Hold, you understand that such processing may occur subject to those providers' terms and applicable law."
+    },
+    {
+      "title": "12. Changes to This Privacy Policy",
+      "content": "We may update this Privacy Policy from time to time. When we do, we will revise the effective date at the top of this page. Continued use of Hold after changes become effective constitutes acceptance of the updated policy, except where applicable law requires otherwise."
+    },
+    {
+      "title": "13. Contact Us",
+      "content": "If you have questions about this Privacy Policy or Hold's privacy practices, please contact us at:",
+      "contact_email": "karin.kay.cappello@gmail.com"
+    }
+  ]
+}
