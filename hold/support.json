@@ -21,10 +21,16 @@
     },
     {
       "title": "Privacy & Terms",
-      "content": "You can review Hold's legal documents from the links above, or open them directly:",
-      "list": [
-        "Privacy Policy: https://www.karinkc.com/hold/privacy-policy.html",
-        "Terms of Use: https://www.karinkc.com/hold/terms-of-use.html"
+      "content": "You can review Hold's legal documents here:",
+      "links": [
+        {
+          "label": "Privacy Policy",
+          "href": "privacy-policy.html"
+        },
+        {
+          "label": "Terms of Use",
+          "href": "terms-of-use.html"
+        }
       ]
     }
   ]

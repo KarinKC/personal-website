@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
     <title>Hold — Support</title>
     <link rel="stylesheet" href="legal.css">
 </head>
@@ -31,13 +32,14 @@
     <script>
         async function fetchDocument() {
             try {
-                const response = await fetch("support.json");
+                const response = await fetch("support.json?v=3", { cache: "no-store" });
                 const data = await response.json();
 
                 document.getElementById("title").innerText = data.title;
                 document.getElementById("effective-date").innerText = "Effective Date: " + data.effective_date;
 
                 const contentDiv = document.getElementById("content");
+                contentDiv.replaceChildren();
                 data.sections.forEach(section => {
                     const sectionTitle = document.createElement("h2");
                     sectionTitle.innerText = section.title;
@@ -52,6 +54,19 @@
                         section.list.forEach(item => {
                             const li = document.createElement("li");
                             li.innerText = item;
+                            ul.appendChild(li);
+                        });
+                        contentDiv.appendChild(ul);
+                    }
+
+                    if (section.links) {
+                        const ul = document.createElement("ul");
+                        section.links.forEach(link => {
+                            const li = document.createElement("li");
+                            const anchor = document.createElement("a");
+                            anchor.href = link.href;
+                            anchor.innerText = link.label;
+                            li.appendChild(anchor);
                             ul.appendChild(li);
                         });
                         contentDiv.appendChild(ul);
