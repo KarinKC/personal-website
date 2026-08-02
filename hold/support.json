@@ -1,0 +1,37 @@
+{
+  "title": "Support",
+  "effective_date": "August 2, 2026",
+  "sections": [
+    {
+      "title": "We're here to help",
+      "content": "If you have a question about Hold, ran into a bug, or need help with your subscription, reach out and we'll get back to you as soon as possible."
+    },
+    {
+      "title": "Contact Us",
+      "content": "Send us an email and we'll respond within 1–2 business days.",
+      "contact_email": "karin.kay.cappello@gmail.com"
+    },
+    {
+      "title": "Subscription Help",
+      "content": "Hold subscriptions are billed through your Apple ID. To cancel or manage your subscription:",
+      "list": [
+        "On iPhone or iPad: Settings → Apple ID → Subscriptions.",
+        "Or visit apps.apple.com/account/subscriptions."
+      ]
+    },
+    {
+      "title": "Privacy & Terms",
+      "content": "You can review Hold's legal documents here:",
+      "links": [
+        {
+          "label": "Privacy Policy",
+          "href": "privacy-policy.html"
+        },
+        {
+          "label": "Terms of Use",
+          "href": "terms-of-use.html"
+        }
+      ]
+    }
+  ]
+}
