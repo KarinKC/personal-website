@@ -1,0 +1,41 @@
+{
+  "title": "Support",
+  "effective_date": "October 17, 2026",
+  "sections": [
+    {
+      "title": "We're here to help",
+      "content": "If something in MigraineKit looks wrong, or you need help with a purchase, write to us and we will reply as soon as we can."
+    },
+    {
+      "title": "Contact",
+      "content": "Email us. We aim to reply within 1–2 business days.",
+      "contact_email": "karin.kay.cappello@gmail.com"
+    },
+    {
+      "title": "Your diary",
+      "content": "There is no account. Entries stay on the iPhone where you typed them. Deleting the App removes that diary from the phone. A purchase can be restored. The entries cannot."
+    },
+    {
+      "title": "Purchases",
+      "content": "Pro is billed by Apple to your Apple ID. The yearly plan renews until you cancel it. The lifetime purchase is paid once. To manage or cancel the yearly plan:",
+      "list": [
+        "On iPhone: Settings → Apple ID → Subscriptions.",
+        "Or visit apps.apple.com/account/subscriptions."
+      ]
+    },
+    {
+      "title": "Privacy and terms",
+      "content": "The legal pages for MigraineKit:",
+      "links": [
+        {
+          "label": "Privacy Policy",
+          "href": "privacy-policy.html"
+        },
+        {
+          "label": "Terms of Use",
+          "href": "terms-of-use.html"
+        }
+      ]
+    }
+  ]
+}

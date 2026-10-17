@@ -1,0 +1,78 @@
+{
+  "title": "Terms of Use",
+  "effective_date": "October 17, 2026",
+  "sections": [
+    {
+      "title": "1. Agreement",
+      "content": "These Terms of Use (\"Terms\") cover your use of the MigraineKit iOS app (\"MigraineKit\" or \"the App\"), from the developer operating under the KarinKC brand (\"we\", \"us\", or \"our\"). By downloading or using MigraineKit, you agree to these Terms. If you do not agree, do not use the App."
+    },
+    {
+      "title": "2. The App",
+      "content": "MigraineKit is a diary. You can log a migraine that is happening now, or one from an earlier day, mark it Soft, Strong, or Severe, and note whether you took medicine. You can look back at the list, and with Pro you can see a chart, export a one-page PDF, and open the sounds other than white noise."
+    },
+    {
+      "title": "3. Not medical advice",
+      "content": "MigraineKit stores what you typed. It does not diagnose, predict, score risk, or suggest treatment. It is not a medical device. Talk to a doctor about your migraines. If you need urgent help, contact a doctor or local emergency services."
+    },
+    {
+      "title": "4. License",
+      "content": "We give you a personal, non-exclusive, non-transferable, revocable license to use MigraineKit on Apple devices you own or control, as the App Store terms allow. You may not copy, modify, distribute, sell, or reverse engineer the App, except where the law does not allow that limit."
+    },
+    {
+      "title": "5. No account",
+      "content": "MigraineKit does not have its own account. A purchase is tied to your Apple ID. You are responsible for your Apple ID and your iPhone."
+    },
+    {
+      "title": "6. Free use and Pro",
+      "content": "You can save three entries for free. Deleting an entry does not give that free save back. MigraineKit Pro unlocks unlimited entries, the chart, the PDF, and every sound except white noise, which stays free. Pro is either a yearly plan or a one-time lifetime purchase. There is no monthly plan and no free trial. Prices are shown in the App before you pay.",
+      "list": [
+        "Payment is charged to your Apple ID when you confirm the purchase.",
+        "The yearly plan renews unless you turn off auto-renew at least 24 hours before the end of the current period.",
+        "Apple charges the renewal within 24 hours before the period ends, at the price shown in the App Store.",
+        "You can manage or cancel the yearly plan in your Apple ID account settings.",
+        "The lifetime purchase is paid once and does not renew."
+      ]
+    },
+    {
+      "title": "7. Your entries",
+      "content": "What you type stays yours. It stays on the iPhone where you typed it. Uninstalling MigraineKit, or deleting an entry, removes it from that iPhone. We do not keep a copy."
+    },
+    {
+      "title": "8. Acceptable use",
+      "content": "Do not misuse MigraineKit, try to break its purchase checks, or use it in a way that breaks the law or Apple's terms."
+    },
+    {
+      "title": "9. Our rights",
+      "content": "MigraineKit, including its name, design, and software, belongs to us or our licensors. These Terms do not give you our trademarks, except the right to use the App."
+    },
+    {
+      "title": "10. Apple and RevenueCat",
+      "content": "Purchases go through Apple. RevenueCat tells the App whether Pro is active. Their terms and privacy policies apply to those services. We are not responsible for services we do not control."
+    },
+    {
+      "title": "11. No warranty",
+      "content": "MigraineKit is provided \"as is\" and \"as available\", without warranties of any kind, to the extent the law allows. We do not promise that the App will always be available or free of errors."
+    },
+    {
+      "title": "12. Limit of liability",
+      "content": "To the extent the law allows, we are not liable for indirect or consequential loss, or for loss of the diary on your iPhone, arising from your use of MigraineKit. Our total liability for a claim is limited to the amount you paid for MigraineKit Pro in the twelve months before the claim, or nothing if you have not paid, except where the law does not allow that limit."
+    },
+    {
+      "title": "13. Changes",
+      "content": "We may change the App and these Terms. We will change the effective date when the Terms change. If you keep using MigraineKit after that, you accept the new Terms, unless the law says otherwise. If you do not accept them, stop using the App and cancel a yearly plan through Apple."
+    },
+    {
+      "title": "14. Apple",
+      "content": "These Terms are between you and us, not Apple. Apple is not responsible for MigraineKit or for supporting it. Apple is a third-party beneficiary of these Terms and may enforce them."
+    },
+    {
+      "title": "15. Law",
+      "content": "These Terms use the laws of England and Wales, except where consumer laws where you live cannot be set aside."
+    },
+    {
+      "title": "16. Contact",
+      "content": "Questions about these Terms can be sent to:",
+      "contact_email": "karin.kay.cappello@gmail.com"
+    }
+  ]
+}
