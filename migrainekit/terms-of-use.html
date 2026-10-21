@@ -18,8 +18,7 @@
             <a href="terms-of-use.html" aria-current="page">Terms of Use</a>
         </nav>
 
-        <h1 id="title">Loading…</h1>
-        <p id="effective-date"></p>
+        <h1 id="title">Terms of Use</h1>
         <div id="content"></div>
 
         <footer>
@@ -29,42 +28,21 @@
 
     <script>
         async function fetchDocument() {
+            const contentDiv = document.getElementById("content");
             try {
-                const response = await fetch("terms-of-use.json");
-                const data = await response.json();
-
-                document.getElementById("title").innerText = data.title;
-                document.getElementById("effective-date").innerText = "Effective Date: " + data.effective_date;
-
-                const contentDiv = document.getElementById("content");
-                data.sections.forEach(section => {
-                    const sectionTitle = document.createElement("h2");
-                    sectionTitle.innerText = section.title;
-                    contentDiv.appendChild(sectionTitle);
-
-                    const sectionContent = document.createElement("p");
-                    sectionContent.innerText = section.content;
-                    contentDiv.appendChild(sectionContent);
-
-                    if (section.list) {
-                        const ul = document.createElement("ul");
-                        section.list.forEach(item => {
-                            const li = document.createElement("li");
-                            li.innerText = item;
-                            ul.appendChild(li);
-                        });
-                        contentDiv.appendChild(ul);
-                    }
-
-                    if (section.contact_email) {
-                        const emailLink = document.createElement("a");
-                        emailLink.href = "mailto:" + section.contact_email;
-                        emailLink.innerText = section.contact_email;
-                        contentDiv.appendChild(emailLink);
-                    }
+                const response = await fetch("terms.json");
+                if (!response.ok) throw new Error("status");
+                const blocks = await response.json();
+                blocks.forEach(block => {
+                    if (block.type !== "heading" && block.type !== "paragraph") return;
+                    const element = document.createElement(block.type === "heading" ? "h2" : "p");
+                    element.textContent = block.text;
+                    contentDiv.appendChild(element);
                 });
             } catch (error) {
-                document.getElementById("title").innerText = "Failed to load terms of use.";
+                const message = document.createElement("p");
+                message.textContent = "Failed to load terms of use.";
+                contentDiv.appendChild(message);
             }
         }
 

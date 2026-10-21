@@ -1,0 +1,146 @@
+[
+  {
+    "type": "paragraph",
+    "text": "Effective Date: October 17, 2026"
+  },
+  {
+    "type": "heading",
+    "text": "1. Introduction"
+  },
+  {
+    "type": "paragraph",
+    "text": "Welcome to MigraineKit (\"MigraineKit\", \"the App\"), a migraine and headache diary for iOS. This policy explains what the App stores, what stays on your iPhone, and who handles a purchase. MigraineKit is provided by the developer operating under the KarinKC brand (\"we\", \"us\", or \"our\")."
+  },
+  {
+    "type": "heading",
+    "text": "2. No account"
+  },
+  {
+    "type": "paragraph",
+    "text": "MigraineKit does not ask you to create an account, sign in, or give a name or email address to use the diary."
+  },
+  {
+    "type": "heading",
+    "text": "3. What stays on your iPhone"
+  },
+  {
+    "type": "paragraph",
+    "text": "The diary stays on this iPhone. The App stores only what you type, plus the details needed to show that entry. We do not operate a server that receives your migraine diary. On your device, that can include:"
+  },
+  {
+    "type": "paragraph",
+    "text": "The day of an entry, and the time only when you log a migraine that is happening now."
+  },
+  {
+    "type": "paragraph",
+    "text": "How bad it is: Soft, Strong, or Severe."
+  },
+  {
+    "type": "paragraph",
+    "text": "Whether you took medicine, and the medicine note if you wrote one."
+  },
+  {
+    "type": "paragraph",
+    "text": "Settings on this iPhone, such as appearance and whether you finished onboarding."
+  },
+  {
+    "type": "heading",
+    "text": "4. Purchases"
+  },
+  {
+    "type": "paragraph",
+    "text": "If you buy MigraineKit Pro, the purchase goes through Apple and is charged to your Apple ID. We use RevenueCat to tell the App whether Pro is active. Apple and RevenueCat may process purchase information, such as an anonymous identifier, the product you bought, and whether a yearly plan is active, under their own privacy policies. We do not receive your card number. Your diary is not part of the purchase."
+  },
+  {
+    "type": "heading",
+    "text": "5. Analytics and advertising"
+  },
+  {
+    "type": "paragraph",
+    "text": "MigraineKit does not use advertising or a tracking SDK. It does not send your entries, intensity, medicine notes, or the times of your migraines off the iPhone. We do not sell your information."
+  },
+  {
+    "type": "heading",
+    "text": "6. How the diary is used"
+  },
+  {
+    "type": "paragraph",
+    "text": "What you type is used only to show the diary on this iPhone:"
+  },
+  {
+    "type": "paragraph",
+    "text": "The list of entries."
+  },
+  {
+    "type": "paragraph",
+    "text": "The chart of your strongest migraine each day, if you have Pro."
+  },
+  {
+    "type": "paragraph",
+    "text": "A one-page PDF of what you typed, if you export it."
+  },
+  {
+    "type": "paragraph",
+    "text": "Sounds in the App. They are placeholders in this version and are not recordings of you."
+  },
+  {
+    "type": "heading",
+    "text": "7. Who else may process information"
+  },
+  {
+    "type": "paragraph",
+    "text": "We do not sell or rent your information. A purchase can involve:"
+  },
+  {
+    "type": "paragraph",
+    "text": "Apple — the App Store and payment for Pro."
+  },
+  {
+    "type": "paragraph",
+    "text": "RevenueCat — whether the Pro purchase on your Apple ID is active."
+  },
+  {
+    "type": "heading",
+    "text": "8. Security"
+  },
+  {
+    "type": "paragraph",
+    "text": "Because the diary stays on your iPhone, it is protected by your device passcode, Face ID or Touch ID, and iOS encryption. Keep the phone locked and updated."
+  },
+  {
+    "type": "heading",
+    "text": "9. Deletion"
+  },
+  {
+    "type": "paragraph",
+    "text": "You can delete an entry in the App. Deleting MigraineKit removes the diary stored on that iPhone. Apple, and RevenueCat as part of the purchase, may keep the record of a purchase under their own rules. Restoring purchases on another iPhone can turn Pro back on. It does not bring the diary with it."
+  },
+  {
+    "type": "heading",
+    "text": "10. Children"
+  },
+  {
+    "type": "paragraph",
+    "text": "MigraineKit is not directed to children under 13, or under the minimum age where you live. We do not knowingly collect personal information from children."
+  },
+  {
+    "type": "heading",
+    "text": "11. Changes"
+  },
+  {
+    "type": "paragraph",
+    "text": "We may update this policy. When we do, we will change the effective date at the top of this page."
+  },
+  {
+    "type": "heading",
+    "text": "12. Contact"
+  },
+  {
+    "type": "paragraph",
+    "text": "Questions about this policy can be sent to:"
+  },
+  {
+    "type": "paragraph",
+    "text": "karin.kay.cappello@gmail.com"
+  }
+]
