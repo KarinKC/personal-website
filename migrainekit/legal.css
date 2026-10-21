@@ -1,12 +1,13 @@
 :root {
-    --bg: #1C1A22;
-    --surface: #2A2633;
-    --primary: #F3EDE4;
-    --secondary: #B7AEC4;
-    --accent: #7C9A92;
-    --link: #7C9A92;
-    --link-hover: #F3EDE4;
-    --rule: rgba(183, 174, 196, 0.4);
+    /* Light theme from HeadacheTracker: background #F3EEE6, text black, raised white, line #E0E0E0, lavender #B8A6DD. Secondary is lavender at 0.55 over black. */
+    --bg: #F3EEE6;
+    --surface: #FFFFFF;
+    --primary: #000000;
+    --secondary: #655B7A;
+    --accent: #B8A6DD;
+    --link: #655B7A;
+    --link-hover: #000000;
+    --rule: #E0E0E0;
     --max-width: 42rem;
 }
 
@@ -18,7 +19,7 @@
 
 html {
     -webkit-text-size-adjust: 100%;
-    color-scheme: dark;
+    color-scheme: light;
 }
 
 body {
@@ -133,7 +134,7 @@ h1 {
     color: var(--link);
     font-weight: 500;
     text-decoration: underline;
-    text-decoration-color: rgba(124, 154, 146, 0.55);
+    text-decoration-color: rgba(184, 166, 221, 0.55);
     text-underline-offset: 0.2em;
 }
 
